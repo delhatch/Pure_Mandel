@@ -1,0 +1,20 @@
+force -freeze sim:/Engine/eRST 1 0
+force -freeze sim:/Engine/Engine_CLK 1 0, 0 {10000000 fs} -r {20 ns}
+force -freeze sim:/Engine/my_addr 001 0
+force -freeze sim:/Engine/engine_addr 001 0
+force -freeze sim:/Engine/latch_en 0 0
+force -freeze sim:/Engine/in_word 83'h0000000e0000000200000 0
+force -freeze sim:/Engine/req_ack 0 0
+run 45 ns
+force -freeze sim:/Engine/eRST 0 0
+run 45 ns
+force -freeze sim:/Engine/latch_en 1 0
+run 100 ns
+force -freeze sim:/Engine/latch_en 0 0
+run 300 ns
+force -freeze sim:/Engine/req_ack 1 0
+run 50 ns
+force -freeze sim:/Engine/req_ack 0 0
+run 100 ns
+force -freeze sim:/Engine/latch_en 1 0
+run 100 ns

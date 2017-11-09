@@ -1,0 +1,10 @@
+PLL_Name	engine_pll:u2|altpll:altpll_component|engine_pll_altpll:auto_generated|pll1
+PLLJITTER	30
+PLLSPEmax	84
+PLLSPEmin	-53
+
+PLL_Name	vga_pll:u4|altpll:altpll_component|vga_pll_altpll:auto_generated|pll1
+PLLJITTER	NA
+PLLSPEmax	84
+PLLSPEmin	-53
+

@@ -1,0 +1,8 @@
+C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/Coor_gen_tb.v {1 {vlog -work work -nocovercells C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/Coor_gen_tb.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module Coor_gen_tb
+
+Top level modules:
+	Coor_gen_tb
+
+} {} {}}

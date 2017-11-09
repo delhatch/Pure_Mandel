@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Nov 08 20:04:27 2017
+Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
+Revision Name : Mandel
+Top-level Entity Name : Mandel
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 4,603 / 114,480 ( 4 % )
+    Total combinational functions : 4,130 / 114,480 ( 4 % )
+    Dedicated logic registers : 1,354 / 114,480 ( 1 % )
+Total registers : 1354
+Total pins : 78 / 529 ( 15 % )
+Total virtual pins : 0
+Total memory bits : 2,463,744 / 3,981,312 ( 62 % )
+Embedded Multiplier 9-bit elements : 174 / 532 ( 33 % )
+Total PLLs : 2 / 4 ( 50 % )

@@ -1,0 +1,22 @@
+module Mod_counter
+	#( parameter N=10, M=640 )
+	(
+		input wire clk,
+		input wire, reset,
+		output [N-1:0] q
+	);
+	
+reg [N-1:0] r_reg;
+wire [N-1:0] r_next;
+
+always @( posedge clk, posedge reset )
+	if( reset )
+		r_reg <= 0;
+	else
+		r_reg <= r_next;
+
+assign r_next = ( r_reg == (M-1)) ? 0 : r_reg + 1;
+assign q = r_reg;
+
+endmodule
+	

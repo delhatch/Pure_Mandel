@@ -1,0 +1,50 @@
+C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/img_index.v {1 {vlog -work work -nocovercells C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/img_index.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module img_index
+
+Top level modules:
+	img_index
+
+} {} {}} C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/VGA_Controller.v {1 {vlog -work work -nocovercells C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/VGA_Controller.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module VGA_Controller
+
+Top level modules:
+	VGA_Controller
+
+} {} {}} C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/engine_pll.v {1 {vlog -work work -nocovercells C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/engine_pll.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module engine_pll
+
+Top level modules:
+	engine_pll
+
+} {} {}} C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/Engine.v {1 {vlog -work work -nocovercells C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/Engine.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module Engine
+
+Top level modules:
+	Engine
+
+} {} {}} C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/VGA.v {1 {vlog -work work -nocovercells C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/VGA.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module VGA
+
+Top level modules:
+	VGA
+
+} {} {}} C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/my_img_data.v {1 {vlog -work work -nocovercells C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/my_img_data.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module my_img_data
+
+Top level modules:
+	my_img_data
+
+} {} {}} C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/Mod_counter.v {1 {vlog -work work -nocovercells C:/Users/Administrator/OneDrive/fpga/altera/Pure_Mandel/Mod_counter.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module Mod_counter
+
+Top level modules:
+	Mod_counter
+
+} {} {}}

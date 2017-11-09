@@ -1,0 +1,47 @@
+
+State Machine - |Mandel|Engine2VGA:u3|state
+Name state.state_d state.state_c state.state_b state.000 
+state.000 0 0 0 0 
+state.state_b 0 0 1 1 
+state.state_c 0 1 0 1 
+state.state_d 1 0 0 1 
+
+State Machine - |Mandel|Engine:e3|state
+Name state.state_g state.state_f state.state_e state.state_d state.state_c state.state_b state.000 
+state.000 0 0 0 0 0 0 0 
+state.state_b 0 0 0 0 0 1 1 
+state.state_c 0 0 0 0 1 0 1 
+state.state_d 0 0 0 1 0 0 1 
+state.state_e 0 0 1 0 0 0 1 
+state.state_f 0 1 0 0 0 0 1 
+state.state_g 1 0 0 0 0 0 1 
+
+State Machine - |Mandel|Engine:e2|state
+Name state.state_g state.state_f state.state_e state.state_d state.state_c state.state_b state.000 
+state.000 0 0 0 0 0 0 0 
+state.state_b 0 0 0 0 0 1 1 
+state.state_c 0 0 0 0 1 0 1 
+state.state_d 0 0 0 1 0 0 1 
+state.state_e 0 0 1 0 0 0 1 
+state.state_f 0 1 0 0 0 0 1 
+state.state_g 1 0 0 0 0 0 1 
+
+State Machine - |Mandel|Engine:e1|state
+Name state.state_g state.state_f state.state_e state.state_d state.state_c state.state_b state.000 
+state.000 0 0 0 0 0 0 0 
+state.state_b 0 0 0 0 0 1 1 
+state.state_c 0 0 0 0 1 0 1 
+state.state_d 0 0 0 1 0 0 1 
+state.state_e 0 0 1 0 0 0 1 
+state.state_f 0 1 0 0 0 0 1 
+state.state_g 1 0 0 0 0 0 1 
+
+State Machine - |Mandel|Engine:e0|state
+Name state.state_g state.state_f state.state_e state.state_d state.state_c state.state_b state.000 
+state.000 0 0 0 0 0 0 0 
+state.state_b 0 0 0 0 0 1 1 
+state.state_c 0 0 0 0 1 0 1 
+state.state_d 0 0 0 1 0 0 1 
+state.state_e 0 0 1 0 0 0 1 
+state.state_f 0 1 0 0 0 0 1 
+state.state_g 1 0 0 0 0 0 1 
