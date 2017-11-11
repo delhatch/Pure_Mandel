@@ -1,6 +1,6 @@
 // Code reference "FPGA Prototyping by Verilog Examples" pg.192
 module Mod_counter
-	#(parameter N = 10, M = 640 )
+	#( parameter N, M )
 	(
 		input  clk,
 		input  clk_en,

@@ -1,8 +1,7 @@
-// Came from verified engine code that worked at 100 MHZ.
-// Module simulated well on 10:30 am 8 NOV 2017.
+// Calculating engine. Executes the mandelbrot algorithm.
 module Engine (
-   input [2:0] my_addr,
-	input [2:0] engine_addr,
+   input [`E_ADDR_WIDTH:0] my_addr,
+	input [`E_ADDR_WIDTH:0] engine_addr,
 	input [82:0] in_word,
 	input latch_en,             // also indicates "GO" (assuming the address matches)
 	input eRST,
@@ -21,7 +20,6 @@ localparam	state_a = 3'b000,
 				state_e = 3'b100,
 				state_f = 3'b101,
 				state_g = 3'b110;
-				//state_h = 3'b111;
 
 // Wire declarations
 reg [2:0] state = 3'b000;

@@ -1,4 +1,12 @@
 // Creates VGA mandelbrot w/ pure logic. No Nios.
+// Number of mandelbrot engines to instantiate
+`define NUM_PROC 12
+// Number of bits in engine address bus.
+`define E_ADDR_WIDTH 4
+// Note: With 12 engines, the max clock freq. is around 92 MHz with DE2-115 (EP4CE115F29C7).
+//       It can calculate 13.56 frames per second.
+//    With only 4 engines, fmax is ~100 MHz. 5.04 frames per second.
+
 module Mandel (
 	input [17:0] SW,
 	input [3:0] KEY,
@@ -16,18 +24,15 @@ module Mandel (
 	output VGA_VS
 );
 
-parameter NUM_PROC = 4;
-parameter E_ADDR_WIDTH = log2( NUM_PROC );  // Number of bits in engine address bus.
-
 wire top_reset;    // Tied to KEY[0]
-wire [3:0] dones;
+wire [`NUM_PROC-1:0] dones;
 wire latch, top_wr_enable, engine_clock, VGA_clock;
-wire [2:0] top_engine_addr;
+wire [`E_ADDR_WIDTH-1:0] top_engine_addr;
 wire [82:0] word;
 wire [18:0] ram_address;
 wire [7:0] ram_data;
-wire [3:0]req_ack_bus;
-wire [3:0] top_eng_req;
+wire [`NUM_PROC-1:0]req_ack_bus;
+wire [`NUM_PROC-1:0] top_eng_req;
 wire [26:0] engine_word;
 wire top_frame;
 
@@ -36,7 +41,7 @@ assign ram_address = engine_word[26:17] + ( engine_word[16:8] * 640 ); // x+y*64
 assign ram_data = engine_word[7:0];
 assign top_reset = SW[0];
 
-Coor_gen u1 (
+Coor_gen #( .C_ADDR_WIDTH(`E_ADDR_WIDTH) ) u1 (
 	.cclk( engine_clock ),		// into
 	.ckey( KEY ),				// into
 	.creset( top_reset ),	// into
@@ -46,9 +51,9 @@ Coor_gen u1 (
 	.cword2engines( word ), // outof. 10 bits for x, 9 for y, 32*2 for fractional integer versions
 	.frame( top_frame )
 );
-
+//-----  Instantiate calculating engines ---------------------
 Engine e0 (
-   .my_addr( 3'b000 ),
+   .my_addr( 4'b0000 ),
 	.engine_addr( top_engine_addr ),  // Is coordinate_generator trying to talk to this instance?
 	.in_word( word ),   // 82-bit word from coordinator generator.
 	.latch_en( latch ), // single latch from coordinator generator to all engines. (eng addr must match)
@@ -60,7 +65,7 @@ Engine e0 (
 	.service_req( top_eng_req[0] )  // Tells Engine2VGA that it has a result, ready to go to RAM.
 );
 Engine e1 (
-   .my_addr( 3'b001 ),
+   .my_addr( 4'b0001 ),
 	.engine_addr( top_engine_addr ),  // Is coordinate_generator trying to talk to this instance?
 	.in_word( word ),   // 82-bit word from coordinator generator.
 	.latch_en( latch ), // single latch from coordinator generator to all engines. (eng addr must match)
@@ -72,7 +77,7 @@ Engine e1 (
 	.service_req( top_eng_req[1] )  // Tells Engine2VGA that it has a result, ready to go to RAM.
 );
 Engine e2 (
-   .my_addr( 3'b010 ),
+   .my_addr( 4'b0010 ),
 	.engine_addr( top_engine_addr ),  // Is coordinate_generator trying to talk to this instance?
 	.in_word( word ),   // 82-bit word from coordinator generator.
 	.latch_en( latch ), // single latch from coordinator generator to all engines. (eng addr must match)
@@ -84,7 +89,7 @@ Engine e2 (
 	.service_req( top_eng_req[2] )  // Tells Engine2VGA that it has a result, ready to go to RAM.
 );
 Engine e3 (
-   .my_addr( 3'b011 ),
+   .my_addr( 4'b0011 ),
 	.engine_addr( top_engine_addr ),  // Is coordinate_generator trying to talk to this instance?
 	.in_word( word ),   // 82-bit word from coordinator generator.
 	.latch_en( latch ), // single latch from coordinator generator to all engines. (eng addr must match)
@@ -95,7 +100,103 @@ Engine e3 (
 	.available( dones[3] ),      // output of engine. tells coordinator generator to feed me new coor.s
 	.service_req( top_eng_req[3] )  // Tells Engine2VGA that it has a result, ready to go to RAM.
 );
-
+Engine e4 (
+   .my_addr( 4'b0100 ),
+	.engine_addr( top_engine_addr ),  // Is coordinate_generator trying to talk to this instance?
+	.in_word( word ),   // 82-bit word from coordinator generator.
+	.latch_en( latch ), // single latch from coordinator generator to all engines. (eng addr must match)
+	.eRST( top_reset ),
+	.Engine_CLK( engine_clock ),
+	.req_ack( req_ack_bus[4] ),   // Number of this Engine.
+	.out_word( engine_word ),    // 27-bit tri-state bus.  Engine's itr results, along with assoc'd x,y.
+	.available( dones[4] ),      // output of engine. tells coordinator generator to feed me new coor.s
+	.service_req( top_eng_req[4] )  // Tells Engine2VGA that it has a result, ready to go to RAM.
+);
+Engine e5 (
+   .my_addr( 4'b0101 ),
+	.engine_addr( top_engine_addr ),  // Is coordinate_generator trying to talk to this instance?
+	.in_word( word ),   // 82-bit word from coordinator generator.
+	.latch_en( latch ), // single latch from coordinator generator to all engines. (eng addr must match)
+	.eRST( top_reset ),
+	.Engine_CLK( engine_clock),
+	.req_ack( req_ack_bus[5] ),   // Number of this Engine.
+	.out_word( engine_word ),    // 27-bit tri-state bus.  Engine's itr results, along with assoc'd x,y.
+	.available( dones[5] ),      // output of engine. tells coordinator generator to feed me new coor.s
+	.service_req( top_eng_req[5] )  // Tells Engine2VGA that it has a result, ready to go to RAM.
+);
+Engine e6 (
+   .my_addr( 4'b0110 ),
+	.engine_addr( top_engine_addr ),  // Is coordinate_generator trying to talk to this instance?
+	.in_word( word ),   // 82-bit word from coordinator generator.
+	.latch_en( latch ), // single latch from coordinator generator to all engines. (eng addr must match)
+	.eRST( top_reset ),
+	.Engine_CLK( engine_clock),
+	.req_ack( req_ack_bus[6] ),   // Number of this Engine.
+	.out_word( engine_word ),    // 27-bit tri-state bus.  Engine's itr results, along with assoc'd x,y.
+	.available( dones[6] ),      // output of engine. tells coordinator generator to feed me new coor.s
+	.service_req( top_eng_req[6] )  // Tells Engine2VGA that it has a result, ready to go to RAM.
+);
+Engine e7 (
+   .my_addr( 4'b0111 ),
+	.engine_addr( top_engine_addr ),  // Is coordinate_generator trying to talk to this instance?
+	.in_word( word ),   // 82-bit word from coordinator generator.
+	.latch_en( latch ), // single latch from coordinator generator to all engines. (eng addr must match)
+	.eRST( top_reset ),
+	.Engine_CLK( engine_clock),
+	.req_ack( req_ack_bus[7] ),   // Number of this Engine.
+	.out_word( engine_word ),    // 27-bit tri-state bus.  Engine's itr results, along with assoc'd x,y.
+	.available( dones[7] ),      // output of engine. tells coordinator generator to feed me new coor.s
+	.service_req( top_eng_req[7] )  // Tells Engine2VGA that it has a result, ready to go to RAM.
+);
+Engine e8 (
+   .my_addr( 4'b1000 ),
+	.engine_addr( top_engine_addr ),  // Is coordinate_generator trying to talk to this instance?
+	.in_word( word ),   // 82-bit word from coordinator generator.
+	.latch_en( latch ), // single latch from coordinator generator to all engines. (eng addr must match)
+	.eRST( top_reset ),
+	.Engine_CLK( engine_clock ),
+	.req_ack( req_ack_bus[8] ),   // Number of this Engine.
+	.out_word( engine_word ),    // 27-bit tri-state bus.  Engine's itr results, along with assoc'd x,y.
+	.available( dones[8] ),      // output of engine. tells coordinator generator to feed me new coor.s
+	.service_req( top_eng_req[8] )  // Tells Engine2VGA that it has a result, ready to go to RAM.
+);
+Engine e9 (
+   .my_addr( 4'b1001 ),
+	.engine_addr( top_engine_addr ),  // Is coordinate_generator trying to talk to this instance?
+	.in_word( word ),   // 82-bit word from coordinator generator.
+	.latch_en( latch ), // single latch from coordinator generator to all engines. (eng addr must match)
+	.eRST( top_reset ),
+	.Engine_CLK( engine_clock),
+	.req_ack( req_ack_bus[9] ),   // Number of this Engine.
+	.out_word( engine_word ),    // 27-bit tri-state bus.  Engine's itr results, along with assoc'd x,y.
+	.available( dones[9] ),      // output of engine. tells coordinator generator to feed me new coor.s
+	.service_req( top_eng_req[9] )  // Tells Engine2VGA that it has a result, ready to go to RAM.
+);
+Engine e10 (
+   .my_addr( 4'b1010 ),
+	.engine_addr( top_engine_addr ),  // Is coordinate_generator trying to talk to this instance?
+	.in_word( word ),   // 82-bit word from coordinator generator.
+	.latch_en( latch ), // single latch from coordinator generator to all engines. (eng addr must match)
+	.eRST( top_reset ),
+	.Engine_CLK( engine_clock),
+	.req_ack( req_ack_bus[10] ),   // Number of this Engine.
+	.out_word( engine_word ),    // 27-bit tri-state bus.  Engine's itr results, along with assoc'd x,y.
+	.available( dones[10] ),      // output of engine. tells coordinator generator to feed me new coor.s
+	.service_req( top_eng_req[10] )  // Tells Engine2VGA that it has a result, ready to go to RAM.
+);
+Engine e11 (
+   .my_addr( 4'b1011 ),
+	.engine_addr( top_engine_addr ),  // Is coordinate_generator trying to talk to this instance?
+	.in_word( word ),   // 82-bit word from coordinator generator.
+	.latch_en( latch ), // single latch from coordinator generator to all engines. (eng addr must match)
+	.eRST( top_reset ),
+	.Engine_CLK( engine_clock),
+	.req_ack( req_ack_bus[11] ),   // Number of this Engine.
+	.out_word( engine_word ),    // 27-bit tri-state bus.  Engine's itr results, along with assoc'd x,y.
+	.available( dones[11] ),      // output of engine. tells coordinator generator to feed me new coor.s
+	.service_req( top_eng_req[11] )  // Tells Engine2VGA that it has a result, ready to go to RAM.
+);
+//-------  Done instantiating the engines -----------------------
 Engine2VGA u3 (
    .engine_req( top_eng_req ),  // 3:0 Number of engines. one-hot coded.
 	.req_ack( req_ack_bus ),     // 3:0 Acknowledge the request. In response, the engine will place it's word on the bus.
@@ -121,7 +222,7 @@ VGA vpg (
 	.iCLK_25( VGA_clock )         // VGA pixel clock in.
 );
 
-// Set up Engine PLL. Output c0 is 100 MHz for the computation engine.
+// Set up Engine PLL. Output c0 is 100 MHz for the computation engines.
 engine_pll u2 (
 	.inclk0( CLOCK_50 ),
 	.c0( engine_clock )
@@ -135,12 +236,12 @@ vga_pll u4 (
 	//.c1( VGA_clock )
 );
 
-// If an engine is busy (inverse of done signal) then light up it's LED. (1->LED = illuminated)
+// If an engine is working then light up it's LED. (1->LED = illuminated)
 // Tested.
 integer h;
 always @( dones )
 begin
-  for (h=0; h<NUM_PROC; h=h+1) LEDR[h] = ~dones[h];
+  for (h=0; h<`NUM_PROC; h=h+1) LEDR[h] = dones[h];
 end
 
 function integer log2(input integer n); // 1 in = 2. 2 in = 2. 4 in = 3. etc...

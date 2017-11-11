@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Mandel
-Wed Nov 08 20:03:06 2017
+Fri Nov 10 19:08:37 2017
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -17,64 +17,48 @@ Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Editio
   9. Analysis & Synthesis DSP Block Usage Summary
  10. Analysis & Synthesis IP Cores Summary
  11. State Machine - |Mandel|Engine2VGA:u3|state
- 12. State Machine - |Mandel|Engine:e3|state
- 13. State Machine - |Mandel|Engine:e2|state
- 14. State Machine - |Mandel|Engine:e1|state
- 15. State Machine - |Mandel|Engine:e0|state
- 16. Registers Removed During Synthesis
- 17. General Register Statistics
- 18. Inverted Register Statistics
- 19. Multiplexer Restructuring Statistics (Restructuring Performed)
- 20. Source assignments for VGA:vpg|my_img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_ggn1:auto_generated
- 21. Source assignments for VGA:vpg|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_gfc1:auto_generated
- 22. Parameter Settings for User Entity Instance: Top-level Entity: |Mandel
- 23. Parameter Settings for User Entity Instance: Coor_gen:u1
- 24. Parameter Settings for User Entity Instance: Coor_gen:u1|Mod_counter:x_cntr
- 25. Parameter Settings for User Entity Instance: Coor_gen:u1|Mod_counter:y_cntr
- 26. Parameter Settings for User Entity Instance: Engine:e0
- 27. Parameter Settings for User Entity Instance: Engine:e1
- 28. Parameter Settings for User Entity Instance: Engine:e2
- 29. Parameter Settings for User Entity Instance: Engine:e3
- 30. Parameter Settings for User Entity Instance: VGA:vpg|VGA_Controller:u0
- 31. Parameter Settings for User Entity Instance: VGA:vpg|my_img_data:img_data_inst|altsyncram:altsyncram_component
- 32. Parameter Settings for User Entity Instance: VGA:vpg|img_index:img_index_inst|altsyncram:altsyncram_component
- 33. Parameter Settings for User Entity Instance: engine_pll:u2|altpll:altpll_component
- 34. Parameter Settings for User Entity Instance: vga_pll:u4|altpll:altpll_component
- 35. Parameter Settings for Inferred Entity Instance: Engine:e0|lpm_mult:Mult1
- 36. Parameter Settings for Inferred Entity Instance: Engine:e0|lpm_mult:Mult4
- 37. Parameter Settings for Inferred Entity Instance: Engine:e0|lpm_mult:Mult0
- 38. Parameter Settings for Inferred Entity Instance: Engine:e0|lpm_mult:Mult3
- 39. Parameter Settings for Inferred Entity Instance: Engine:e1|lpm_mult:Mult1
- 40. Parameter Settings for Inferred Entity Instance: Engine:e1|lpm_mult:Mult4
- 41. Parameter Settings for Inferred Entity Instance: Engine:e1|lpm_mult:Mult0
- 42. Parameter Settings for Inferred Entity Instance: Engine:e1|lpm_mult:Mult3
- 43. Parameter Settings for Inferred Entity Instance: Engine:e2|lpm_mult:Mult1
- 44. Parameter Settings for Inferred Entity Instance: Engine:e2|lpm_mult:Mult4
- 45. Parameter Settings for Inferred Entity Instance: Engine:e2|lpm_mult:Mult0
- 46. Parameter Settings for Inferred Entity Instance: Engine:e2|lpm_mult:Mult3
- 47. Parameter Settings for Inferred Entity Instance: Engine:e3|lpm_mult:Mult1
- 48. Parameter Settings for Inferred Entity Instance: Engine:e3|lpm_mult:Mult4
- 49. Parameter Settings for Inferred Entity Instance: Engine:e3|lpm_mult:Mult0
- 50. Parameter Settings for Inferred Entity Instance: Engine:e3|lpm_mult:Mult3
- 51. Parameter Settings for Inferred Entity Instance: Engine:e0|lpm_mult:Mult2
- 52. Parameter Settings for Inferred Entity Instance: Engine:e1|lpm_mult:Mult2
- 53. Parameter Settings for Inferred Entity Instance: Engine:e2|lpm_mult:Mult2
- 54. Parameter Settings for Inferred Entity Instance: Engine:e3|lpm_mult:Mult2
- 55. Parameter Settings for Inferred Entity Instance: Coor_gen:u1|lpm_mult:Mult1
- 56. Parameter Settings for Inferred Entity Instance: Coor_gen:u1|lpm_mult:Mult0
- 57. altsyncram Parameter Settings by Entity Instance
- 58. altpll Parameter Settings by Entity Instance
- 59. lpm_mult Parameter Settings by Entity Instance
- 60. Port Connectivity Checks: "VGA:vpg|VGA_Controller:u0"
- 61. Port Connectivity Checks: "Engine:e3"
- 62. Port Connectivity Checks: "Engine:e2"
- 63. Port Connectivity Checks: "Engine:e1"
- 64. Port Connectivity Checks: "Engine:e0"
- 65. Port Connectivity Checks: "Coor_gen:u1|Mod_counter:y_cntr"
- 66. Port Connectivity Checks: "Coor_gen:u1|Mod_counter:x_cntr"
- 67. Elapsed Time Per Partition
- 68. Analysis & Synthesis Messages
- 69. Analysis & Synthesis Suppressed Messages
+ 12. State Machine - |Mandel|Engine:e1|state
+ 13. State Machine - |Mandel|Engine:e0|state
+ 14. Registers Removed During Synthesis
+ 15. General Register Statistics
+ 16. Inverted Register Statistics
+ 17. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 18. Source assignments for VGA:vpg|my_img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_ggn1:auto_generated
+ 19. Source assignments for VGA:vpg|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_gfc1:auto_generated
+ 20. Parameter Settings for User Entity Instance: Coor_gen:u1
+ 21. Parameter Settings for User Entity Instance: Coor_gen:u1|Mod_counter:x_cntr
+ 22. Parameter Settings for User Entity Instance: Coor_gen:u1|Mod_counter:y_cntr
+ 23. Parameter Settings for User Entity Instance: Engine:e0
+ 24. Parameter Settings for User Entity Instance: Engine:e1
+ 25. Parameter Settings for User Entity Instance: VGA:vpg|VGA_Controller:u0
+ 26. Parameter Settings for User Entity Instance: VGA:vpg|my_img_data:img_data_inst|altsyncram:altsyncram_component
+ 27. Parameter Settings for User Entity Instance: VGA:vpg|img_index:img_index_inst|altsyncram:altsyncram_component
+ 28. Parameter Settings for User Entity Instance: engine_pll:u2|altpll:altpll_component
+ 29. Parameter Settings for User Entity Instance: vga_pll:u4|altpll:altpll_component
+ 30. Parameter Settings for Inferred Entity Instance: Engine:e0|lpm_mult:Mult1
+ 31. Parameter Settings for Inferred Entity Instance: Engine:e0|lpm_mult:Mult4
+ 32. Parameter Settings for Inferred Entity Instance: Engine:e0|lpm_mult:Mult0
+ 33. Parameter Settings for Inferred Entity Instance: Engine:e0|lpm_mult:Mult3
+ 34. Parameter Settings for Inferred Entity Instance: Engine:e1|lpm_mult:Mult1
+ 35. Parameter Settings for Inferred Entity Instance: Engine:e1|lpm_mult:Mult4
+ 36. Parameter Settings for Inferred Entity Instance: Engine:e1|lpm_mult:Mult0
+ 37. Parameter Settings for Inferred Entity Instance: Engine:e1|lpm_mult:Mult3
+ 38. Parameter Settings for Inferred Entity Instance: Engine:e0|lpm_mult:Mult2
+ 39. Parameter Settings for Inferred Entity Instance: Engine:e1|lpm_mult:Mult2
+ 40. Parameter Settings for Inferred Entity Instance: Coor_gen:u1|lpm_mult:Mult1
+ 41. Parameter Settings for Inferred Entity Instance: Coor_gen:u1|lpm_mult:Mult0
+ 42. altsyncram Parameter Settings by Entity Instance
+ 43. altpll Parameter Settings by Entity Instance
+ 44. lpm_mult Parameter Settings by Entity Instance
+ 45. Port Connectivity Checks: "VGA:vpg|VGA_Controller:u0"
+ 46. Port Connectivity Checks: "Engine:e1"
+ 47. Port Connectivity Checks: "Engine:e0"
+ 48. Port Connectivity Checks: "Coor_gen:u1|Mod_counter:y_cntr"
+ 49. Port Connectivity Checks: "Coor_gen:u1|Mod_counter:x_cntr"
+ 50. Port Connectivity Checks: "Coor_gen:u1"
+ 51. Elapsed Time Per Partition
+ 52. Analysis & Synthesis Messages
+ 53. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -100,19 +84,19 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 08 20:03:06 2017         ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 10 19:08:37 2017         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Mandel                                        ;
 ; Top-level Entity Name              ; Mandel                                        ;
 ; Family                             ; Cyclone IV E                                  ;
-; Total logic elements               ; 4,433                                         ;
-;     Total combinational functions  ; 4,130                                         ;
-;     Dedicated logic registers      ; 1,378                                         ;
-; Total registers                    ; 1378                                          ;
+; Total logic elements               ; 2,548                                         ;
+;     Total combinational functions  ; 2,393                                         ;
+;     Dedicated logic registers      ; 758                                           ;
+; Total registers                    ; 758                                           ;
 ; Total pins                         ; 78                                            ;
 ; Total virtual pins                 ; 0                                             ;
 ; Total memory bits                  ; 2,463,744                                     ;
-; Embedded Multiplier 9-bit elements ; 174                                           ;
+; Embedded Multiplier 9-bit elements ; 94                                            ;
 ; Total PLLs                         ; 2                                             ;
 +------------------------------------+-----------------------------------------------+
 
@@ -267,32 +251,32 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                   ;
 +---------------------------------------------+-----------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 4,433                                                                                   ;
+; Estimated Total logic elements              ; 2,548                                                                                   ;
 ;                                             ;                                                                                         ;
-; Total combinational functions               ; 4130                                                                                    ;
+; Total combinational functions               ; 2393                                                                                    ;
 ; Logic element usage by number of LUT inputs ;                                                                                         ;
-;     -- 4 input functions                    ; 486                                                                                     ;
-;     -- 3 input functions                    ; 2331                                                                                    ;
-;     -- <=2 input functions                  ; 1313                                                                                    ;
+;     -- 4 input functions                    ; 382                                                                                     ;
+;     -- 3 input functions                    ; 1283                                                                                    ;
+;     -- <=2 input functions                  ; 728                                                                                     ;
 ;                                             ;                                                                                         ;
 ; Logic elements by mode                      ;                                                                                         ;
-;     -- normal mode                          ; 1566                                                                                    ;
-;     -- arithmetic mode                      ; 2564                                                                                    ;
+;     -- normal mode                          ; 987                                                                                     ;
+;     -- arithmetic mode                      ; 1406                                                                                    ;
 ;                                             ;                                                                                         ;
-; Total registers                             ; 1378                                                                                    ;
-;     -- Dedicated logic registers            ; 1378                                                                                    ;
+; Total registers                             ; 758                                                                                     ;
+;     -- Dedicated logic registers            ; 758                                                                                     ;
 ;     -- I/O registers                        ; 0                                                                                       ;
 ;                                             ;                                                                                         ;
 ; I/O pins                                    ; 78                                                                                      ;
 ; Total memory bits                           ; 2463744                                                                                 ;
-; Embedded Multiplier 9-bit elements          ; 174                                                                                     ;
+; Embedded Multiplier 9-bit elements          ; 94                                                                                      ;
 ; Total PLLs                                  ; 2                                                                                       ;
 ;     -- PLLs                                 ; 2                                                                                       ;
 ;                                             ;                                                                                         ;
 ; Maximum fan-out node                        ; engine_pll:u2|altpll:altpll_component|engine_pll_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 1568                                                                                    ;
-; Total fan-out                               ; 28738                                                                                   ;
-; Average fan-out                             ; 4.66                                                                                    ;
+; Maximum fan-out                             ; 948                                                                                     ;
+; Total fan-out                               ; 20536                                                                                   ;
+; Average fan-out                             ; 5.50                                                                                    ;
 +---------------------------------------------+-----------------------------------------------------------------------------------------+
 
 
@@ -301,16 +285,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                               ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Mandel                                      ; 4130 (78)         ; 1378 (0)     ; 2463744     ; 174          ; 2       ; 86        ; 78   ; 0            ; |Mandel                                                                                                                           ;              ;
-;    |Coor_gen:u1|                             ; 185 (35)          ; 22 (3)       ; 0           ; 14           ; 2       ; 6         ; 0    ; 0            ; |Mandel|Coor_gen:u1                                                                                                               ;              ;
+; |Mandel                                      ; 2393 (49)         ; 758 (0)      ; 2463744     ; 94           ; 2       ; 46        ; 78   ; 0            ; |Mandel                                                                                                                           ;              ;
+;    |Coor_gen:u1|                             ; 184 (34)          ; 20 (1)       ; 0           ; 14           ; 2       ; 6         ; 0    ; 0            ; |Mandel|Coor_gen:u1                                                                                                               ;              ;
 ;       |Mod_counter:x_cntr|                   ; 16 (16)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mandel|Coor_gen:u1|Mod_counter:x_cntr                                                                                            ;              ;
 ;       |Mod_counter:y_cntr|                   ; 15 (15)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mandel|Coor_gen:u1|Mod_counter:y_cntr                                                                                            ;              ;
 ;       |lpm_mult:Mult0|                       ; 60 (0)            ; 0 (0)        ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |Mandel|Coor_gen:u1|lpm_mult:Mult0                                                                                                ;              ;
 ;          |mult_sgt:auto_generated|           ; 60 (60)           ; 0 (0)        ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |Mandel|Coor_gen:u1|lpm_mult:Mult0|mult_sgt:auto_generated                                                                        ;              ;
 ;       |lpm_mult:Mult1|                       ; 59 (0)            ; 0 (0)        ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |Mandel|Coor_gen:u1|lpm_mult:Mult1                                                                                                ;              ;
 ;          |mult_qgt:auto_generated|           ; 59 (59)           ; 0 (0)        ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |Mandel|Coor_gen:u1|lpm_mult:Mult1|mult_qgt:auto_generated                                                                        ;              ;
-;    |Engine2VGA:u3|                           ; 11 (11)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mandel|Engine2VGA:u3                                                                                                             ;              ;
-;    |Engine:e0|                               ; 852 (410)         ; 307 (307)    ; 0           ; 40           ; 0       ; 20        ; 0    ; 0            ; |Mandel|Engine:e0                                                                                                                 ;              ;
+;    |Engine2VGA:u3|                           ; 6 (6)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mandel|Engine2VGA:u3                                                                                                             ;              ;
+;    |Engine:e0|                               ; 853 (411)         ; 307 (307)    ; 0           ; 40           ; 0       ; 20        ; 0    ; 0            ; |Mandel|Engine:e0                                                                                                                 ;              ;
 ;       |lpm_mult:Mult0|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e0|lpm_mult:Mult0                                                                                                  ;              ;
 ;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e0|lpm_mult:Mult0|mult_46t:auto_generated                                                                          ;              ;
 ;       |lpm_mult:Mult1|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e0|lpm_mult:Mult1                                                                                                  ;              ;
@@ -321,7 +305,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e0|lpm_mult:Mult3|mult_46t:auto_generated                                                                          ;              ;
 ;       |lpm_mult:Mult4|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e0|lpm_mult:Mult4                                                                                                  ;              ;
 ;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e0|lpm_mult:Mult4|mult_46t:auto_generated                                                                          ;              ;
-;    |Engine:e1|                               ; 852 (410)         ; 307 (307)    ; 0           ; 40           ; 0       ; 20        ; 0    ; 0            ; |Mandel|Engine:e1                                                                                                                 ;              ;
+;    |Engine:e1|                               ; 853 (411)         ; 307 (307)    ; 0           ; 40           ; 0       ; 20        ; 0    ; 0            ; |Mandel|Engine:e1                                                                                                                 ;              ;
 ;       |lpm_mult:Mult0|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e1|lpm_mult:Mult0                                                                                                  ;              ;
 ;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e1|lpm_mult:Mult0|mult_46t:auto_generated                                                                          ;              ;
 ;       |lpm_mult:Mult1|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e1|lpm_mult:Mult1                                                                                                  ;              ;
@@ -332,28 +316,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e1|lpm_mult:Mult3|mult_46t:auto_generated                                                                          ;              ;
 ;       |lpm_mult:Mult4|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e1|lpm_mult:Mult4                                                                                                  ;              ;
 ;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e1|lpm_mult:Mult4|mult_46t:auto_generated                                                                          ;              ;
-;    |Engine:e2|                               ; 852 (410)         ; 307 (307)    ; 0           ; 40           ; 0       ; 20        ; 0    ; 0            ; |Mandel|Engine:e2                                                                                                                 ;              ;
-;       |lpm_mult:Mult0|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e2|lpm_mult:Mult0                                                                                                  ;              ;
-;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e2|lpm_mult:Mult0|mult_46t:auto_generated                                                                          ;              ;
-;       |lpm_mult:Mult1|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e2|lpm_mult:Mult1                                                                                                  ;              ;
-;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e2|lpm_mult:Mult1|mult_46t:auto_generated                                                                          ;              ;
-;       |lpm_mult:Mult2|                       ; 74 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e2|lpm_mult:Mult2                                                                                                  ;              ;
-;          |mult_46t:auto_generated|           ; 74 (74)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e2|lpm_mult:Mult2|mult_46t:auto_generated                                                                          ;              ;
-;       |lpm_mult:Mult3|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e2|lpm_mult:Mult3                                                                                                  ;              ;
-;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e2|lpm_mult:Mult3|mult_46t:auto_generated                                                                          ;              ;
-;       |lpm_mult:Mult4|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e2|lpm_mult:Mult4                                                                                                  ;              ;
-;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e2|lpm_mult:Mult4|mult_46t:auto_generated                                                                          ;              ;
-;    |Engine:e3|                               ; 852 (410)         ; 307 (307)    ; 0           ; 40           ; 0       ; 20        ; 0    ; 0            ; |Mandel|Engine:e3                                                                                                                 ;              ;
-;       |lpm_mult:Mult0|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e3|lpm_mult:Mult0                                                                                                  ;              ;
-;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e3|lpm_mult:Mult0|mult_46t:auto_generated                                                                          ;              ;
-;       |lpm_mult:Mult1|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e3|lpm_mult:Mult1                                                                                                  ;              ;
-;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e3|lpm_mult:Mult1|mult_46t:auto_generated                                                                          ;              ;
-;       |lpm_mult:Mult2|                       ; 74 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e3|lpm_mult:Mult2                                                                                                  ;              ;
-;          |mult_46t:auto_generated|           ; 74 (74)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e3|lpm_mult:Mult2|mult_46t:auto_generated                                                                          ;              ;
-;       |lpm_mult:Mult3|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e3|lpm_mult:Mult3                                                                                                  ;              ;
-;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e3|lpm_mult:Mult3|mult_46t:auto_generated                                                                          ;              ;
-;       |lpm_mult:Mult4|                       ; 92 (0)            ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e3|lpm_mult:Mult4                                                                                                  ;              ;
-;          |mult_46t:auto_generated|           ; 92 (92)           ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Mandel|Engine:e3|lpm_mult:Mult4|mult_46t:auto_generated                                                                          ;              ;
 ;    |VGA:vpg|                                 ; 448 (0)           ; 115 (24)     ; 2463744     ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mandel|VGA:vpg                                                                                                                   ;              ;
 ;       |VGA_Controller:u0|                    ; 127 (127)         ; 85 (85)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mandel|VGA:vpg|VGA_Controller:u0                                                                                                 ;              ;
 ;       |img_index:img_index_inst|             ; 0 (0)             ; 0 (0)        ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mandel|VGA:vpg|img_index:img_index_inst                                                                                          ;              ;
@@ -391,12 +353,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                             ; Number Used ;
 +---------------------------------------+-------------+
 ; Simple Multipliers (9-bit)            ; 2           ;
-; Simple Multipliers (18-bit)           ; 86          ;
+; Simple Multipliers (18-bit)           ; 46          ;
 ; Embedded Multiplier Blocks            ; --          ;
-; Embedded Multiplier 9-bit elements    ; 174         ;
-; Signed Embedded Multipliers           ; 20          ;
-; Unsigned Embedded Multipliers         ; 28          ;
-; Mixed Sign Embedded Multipliers       ; 40          ;
+; Embedded Multiplier 9-bit elements    ; 94          ;
+; Signed Embedded Multipliers           ; 10          ;
+; Unsigned Embedded Multipliers         ; 18          ;
+; Mixed Sign Embedded Multipliers       ; 20          ;
 ; Variable Sign Embedded Multipliers    ; 0           ;
 ; Dedicated Input Shift Register Chains ; 0           ;
 +---------------------------------------+-------------+
@@ -426,38 +388,6 @@ Encoding Type:  One-Hot
 ; state.state_c ; 0             ; 1             ; 0             ; 1         ;
 ; state.state_d ; 1             ; 0             ; 0             ; 1         ;
 +---------------+---------------+---------------+---------------+-----------+
-
-
-Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |Mandel|Engine:e3|state                                                                                   ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+-----------+
-; Name          ; state.state_g ; state.state_f ; state.state_e ; state.state_d ; state.state_c ; state.state_b ; state.000 ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+-----------+
-; state.000     ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0         ;
-; state.state_b ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 1         ;
-; state.state_c ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 1         ;
-; state.state_d ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 1         ;
-; state.state_e ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 1         ;
-; state.state_f ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 1         ;
-; state.state_g ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1         ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+-----------+
-
-
-Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |Mandel|Engine:e2|state                                                                                   ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+-----------+
-; Name          ; state.state_g ; state.state_f ; state.state_e ; state.state_d ; state.state_c ; state.state_b ; state.000 ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+-----------+
-; state.000     ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0         ;
-; state.state_b ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 1         ;
-; state.state_c ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 1         ;
-; state.state_d ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 1         ;
-; state.state_e ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 1         ;
-; state.state_f ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 1         ;
-; state.state_g ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1         ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+-----------+
 
 
 Encoding Type:  One-Hot
@@ -497,16 +427,6 @@ Encoding Type:  One-Hot
 +-----------------------------------------+----------------------------------------+
 ; Register name                           ; Reason for Removal                     ;
 +-----------------------------------------+----------------------------------------+
-; Engine2VGA:u3|calc_req_ack[4]           ; Stuck at GND due to stuck port data_in ;
-; Coor_gen:u1|big_cengine_addr[2]         ; Stuck at GND due to stuck port data_in ;
-; Engine:e3|temp1[40..63]                 ; Merged with Engine:e3|temp1[39]        ;
-; Engine:e3|temp2[40..63]                 ; Merged with Engine:e3|temp2[39]        ;
-; Engine:e3|latched_word[60..63]          ; Merged with Engine:e3|latched_word[59] ;
-; Engine:e3|latched_word[27..31]          ; Merged with Engine:e3|latched_word[26] ;
-; Engine:e2|temp1[40..63]                 ; Merged with Engine:e2|temp1[39]        ;
-; Engine:e2|temp2[40..63]                 ; Merged with Engine:e2|temp2[39]        ;
-; Engine:e2|latched_word[60..63]          ; Merged with Engine:e2|latched_word[59] ;
-; Engine:e2|latched_word[27..31]          ; Merged with Engine:e2|latched_word[26] ;
 ; Engine:e1|temp1[40..63]                 ; Merged with Engine:e1|temp1[39]        ;
 ; Engine:e1|temp2[40..63]                 ; Merged with Engine:e1|temp2[39]        ;
 ; Engine:e1|latched_word[60..63]          ; Merged with Engine:e1|latched_word[59] ;
@@ -518,19 +438,13 @@ Encoding Type:  One-Hot
 ; Engine2VGA:u3|state~4                   ; Lost fanout                            ;
 ; Engine2VGA:u3|state~5                   ; Lost fanout                            ;
 ; Engine2VGA:u3|state~6                   ; Lost fanout                            ;
-; Engine:e3|state~4                       ; Lost fanout                            ;
-; Engine:e3|state~5                       ; Lost fanout                            ;
-; Engine:e3|state~6                       ; Lost fanout                            ;
-; Engine:e2|state~4                       ; Lost fanout                            ;
-; Engine:e2|state~5                       ; Lost fanout                            ;
-; Engine:e2|state~6                       ; Lost fanout                            ;
 ; Engine:e1|state~4                       ; Lost fanout                            ;
 ; Engine:e1|state~5                       ; Lost fanout                            ;
 ; Engine:e1|state~6                       ; Lost fanout                            ;
 ; Engine:e0|state~4                       ; Lost fanout                            ;
 ; Engine:e0|state~5                       ; Lost fanout                            ;
 ; Engine:e0|state~6                       ; Lost fanout                            ;
-; Total Number of Removed Registers = 245 ;                                        ;
+; Total Number of Removed Registers = 123 ;                                        ;
 +-----------------------------------------+----------------------------------------+
 
 
@@ -539,12 +453,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1378  ;
+; Total registers                              ; 758   ;
 ; Number of registers using Synchronous Clear  ; 20    ;
-; Number of registers using Synchronous Load   ; 576   ;
-; Number of registers using Asynchronous Clear ; 141   ;
+; Number of registers using Synchronous Load   ; 288   ;
+; Number of registers using Asynchronous Clear ; 125   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1268  ;
+; Number of registers using Clock Enable       ; 668   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -554,11 +468,9 @@ Encoding Type:  One-Hot
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; Engine:e0|available                    ; 5       ;
-; Engine:e1|available                    ; 5       ;
-; Engine:e2|available                    ; 5       ;
-; Engine:e3|available                    ; 5       ;
-; Total number of inverted registers = 4 ;         ;
+; Engine:e0|available                    ; 10      ;
+; Engine:e1|available                    ; 10      ;
+; Total number of inverted registers = 2 ;         ;
 +----------------------------------------+---------+
 
 
@@ -567,11 +479,8 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+-----------------------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                  ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+-----------------------------+----------------------------+
-; 3:1                ; 80 bits   ; 160 LEs       ; 80 LEs               ; 80 LEs                 ; |Mandel|Engine:e3|temp2[24] ;                            ;
-; 3:1                ; 80 bits   ; 160 LEs       ; 80 LEs               ; 80 LEs                 ; |Mandel|Engine:e2|temp1[16] ;                            ;
-; 3:1                ; 80 bits   ; 160 LEs       ; 80 LEs               ; 80 LEs                 ; |Mandel|Engine:e1|temp1[6]  ;                            ;
-; 3:1                ; 80 bits   ; 160 LEs       ; 80 LEs               ; 80 LEs                 ; |Mandel|Engine:e0|temp2[2]  ;                            ;
-; 4:1                ; 27 bits   ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; |Mandel|engine_word[16]     ;                            ;
+; 3:1                ; 80 bits   ; 160 LEs       ; 80 LEs               ; 80 LEs                 ; |Mandel|Engine:e1|temp1[19] ;                            ;
+; 3:1                ; 80 bits   ; 160 LEs       ; 80 LEs               ; 80 LEs                 ; |Mandel|Engine:e0|temp1[8]  ;                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+-----------------------------+----------------------------+
 
 
@@ -593,24 +502,12 @@ Encoding Type:  One-Hot
 +---------------------------------+--------------------+------+----------------------------------------------------------+
 
 
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |Mandel ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; NUM_PROC       ; 4     ; Signed Integer                                ;
-; E_ADDR_WIDTH   ; 2     ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +----------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Coor_gen:u1 ;
 +----------------+-------+---------------------------------+
 ; Parameter Name ; Value ; Type                            ;
 +----------------+-------+---------------------------------+
-; NUM_PROC       ; 4     ; Signed Integer                  ;
-; E_ADDR_WIDTH   ; 3     ; Signed Integer                  ;
+; C_ADDR_WIDTH   ; 1     ; Signed Integer                  ;
 +----------------+-------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -649,26 +546,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +--------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Engine:e1 ;
-+----------------+-------+-------------------------------+
-; Parameter Name ; Value ; Type                          ;
-+----------------+-------+-------------------------------+
-; MAX_ITERATIONS ; 255   ; Signed Integer                ;
-+----------------+-------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Engine:e2 ;
-+----------------+-------+-------------------------------+
-; Parameter Name ; Value ; Type                          ;
-+----------------+-------+-------------------------------+
-; MAX_ITERATIONS ; 255   ; Signed Integer                ;
-+----------------+-------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Engine:e3 ;
 +----------------+-------+-------------------------------+
 ; Parameter Name ; Value ; Type                          ;
 +----------------+-------+-------------------------------+
@@ -860,7 +737,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CLK3_MULTIPLY_BY              ; 1                            ; Untyped             ;
 ; CLK2_MULTIPLY_BY              ; 1                            ; Untyped             ;
 ; CLK1_MULTIPLY_BY              ; 1                            ; Untyped             ;
-; CLK0_MULTIPLY_BY              ; 2                            ; Signed Integer      ;
+; CLK0_MULTIPLY_BY              ; 46                           ; Signed Integer      ;
 ; CLK9_DIVIDE_BY                ; 0                            ; Untyped             ;
 ; CLK8_DIVIDE_BY                ; 0                            ; Untyped             ;
 ; CLK7_DIVIDE_BY                ; 0                            ; Untyped             ;
@@ -870,7 +747,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CLK3_DIVIDE_BY                ; 1                            ; Untyped             ;
 ; CLK2_DIVIDE_BY                ; 1                            ; Untyped             ;
 ; CLK1_DIVIDE_BY                ; 1                            ; Untyped             ;
-; CLK0_DIVIDE_BY                ; 1                            ; Signed Integer      ;
+; CLK0_DIVIDE_BY                ; 25                           ; Signed Integer      ;
 ; CLK9_PHASE_SHIFT              ; 0                            ; Untyped             ;
 ; CLK8_PHASE_SHIFT              ; 0                            ; Untyped             ;
 ; CLK7_PHASE_SHIFT              ; 0                            ; Untyped             ;
@@ -1847,286 +1724,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Engine:e2|lpm_mult:Mult1           ;
-+------------------------------------------------+--------------+---------------------+
-; Parameter Name                                 ; Value        ; Type                ;
-+------------------------------------------------+--------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 32           ; Untyped             ;
-; LPM_WIDTHB                                     ; 32           ; Untyped             ;
-; LPM_WIDTHP                                     ; 64           ; Untyped             ;
-; LPM_WIDTHR                                     ; 64           ; Untyped             ;
-; LPM_WIDTHS                                     ; 1            ; Untyped             ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
-; LPM_PIPELINE                                   ; 0            ; Untyped             ;
-; LATENCY                                        ; 0            ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
-; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_46t     ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
-+------------------------------------------------+--------------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Engine:e2|lpm_mult:Mult4           ;
-+------------------------------------------------+--------------+---------------------+
-; Parameter Name                                 ; Value        ; Type                ;
-+------------------------------------------------+--------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 32           ; Untyped             ;
-; LPM_WIDTHB                                     ; 32           ; Untyped             ;
-; LPM_WIDTHP                                     ; 64           ; Untyped             ;
-; LPM_WIDTHR                                     ; 64           ; Untyped             ;
-; LPM_WIDTHS                                     ; 1            ; Untyped             ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
-; LPM_PIPELINE                                   ; 0            ; Untyped             ;
-; LATENCY                                        ; 0            ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
-; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_46t     ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
-+------------------------------------------------+--------------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Engine:e2|lpm_mult:Mult0           ;
-+------------------------------------------------+--------------+---------------------+
-; Parameter Name                                 ; Value        ; Type                ;
-+------------------------------------------------+--------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 32           ; Untyped             ;
-; LPM_WIDTHB                                     ; 32           ; Untyped             ;
-; LPM_WIDTHP                                     ; 64           ; Untyped             ;
-; LPM_WIDTHR                                     ; 64           ; Untyped             ;
-; LPM_WIDTHS                                     ; 1            ; Untyped             ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
-; LPM_PIPELINE                                   ; 0            ; Untyped             ;
-; LATENCY                                        ; 0            ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
-; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_46t     ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
-+------------------------------------------------+--------------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Engine:e2|lpm_mult:Mult3           ;
-+------------------------------------------------+--------------+---------------------+
-; Parameter Name                                 ; Value        ; Type                ;
-+------------------------------------------------+--------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 32           ; Untyped             ;
-; LPM_WIDTHB                                     ; 32           ; Untyped             ;
-; LPM_WIDTHP                                     ; 64           ; Untyped             ;
-; LPM_WIDTHR                                     ; 64           ; Untyped             ;
-; LPM_WIDTHS                                     ; 1            ; Untyped             ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
-; LPM_PIPELINE                                   ; 0            ; Untyped             ;
-; LATENCY                                        ; 0            ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
-; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_46t     ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
-+------------------------------------------------+--------------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Engine:e3|lpm_mult:Mult1           ;
-+------------------------------------------------+--------------+---------------------+
-; Parameter Name                                 ; Value        ; Type                ;
-+------------------------------------------------+--------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 32           ; Untyped             ;
-; LPM_WIDTHB                                     ; 32           ; Untyped             ;
-; LPM_WIDTHP                                     ; 64           ; Untyped             ;
-; LPM_WIDTHR                                     ; 64           ; Untyped             ;
-; LPM_WIDTHS                                     ; 1            ; Untyped             ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
-; LPM_PIPELINE                                   ; 0            ; Untyped             ;
-; LATENCY                                        ; 0            ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
-; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_46t     ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
-+------------------------------------------------+--------------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Engine:e3|lpm_mult:Mult4           ;
-+------------------------------------------------+--------------+---------------------+
-; Parameter Name                                 ; Value        ; Type                ;
-+------------------------------------------------+--------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 32           ; Untyped             ;
-; LPM_WIDTHB                                     ; 32           ; Untyped             ;
-; LPM_WIDTHP                                     ; 64           ; Untyped             ;
-; LPM_WIDTHR                                     ; 64           ; Untyped             ;
-; LPM_WIDTHS                                     ; 1            ; Untyped             ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
-; LPM_PIPELINE                                   ; 0            ; Untyped             ;
-; LATENCY                                        ; 0            ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
-; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_46t     ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
-+------------------------------------------------+--------------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Engine:e3|lpm_mult:Mult0           ;
-+------------------------------------------------+--------------+---------------------+
-; Parameter Name                                 ; Value        ; Type                ;
-+------------------------------------------------+--------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 32           ; Untyped             ;
-; LPM_WIDTHB                                     ; 32           ; Untyped             ;
-; LPM_WIDTHP                                     ; 64           ; Untyped             ;
-; LPM_WIDTHR                                     ; 64           ; Untyped             ;
-; LPM_WIDTHS                                     ; 1            ; Untyped             ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
-; LPM_PIPELINE                                   ; 0            ; Untyped             ;
-; LATENCY                                        ; 0            ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
-; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_46t     ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
-+------------------------------------------------+--------------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Engine:e3|lpm_mult:Mult3           ;
-+------------------------------------------------+--------------+---------------------+
-; Parameter Name                                 ; Value        ; Type                ;
-+------------------------------------------------+--------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 32           ; Untyped             ;
-; LPM_WIDTHB                                     ; 32           ; Untyped             ;
-; LPM_WIDTHP                                     ; 64           ; Untyped             ;
-; LPM_WIDTHR                                     ; 64           ; Untyped             ;
-; LPM_WIDTHS                                     ; 1            ; Untyped             ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
-; LPM_PIPELINE                                   ; 0            ; Untyped             ;
-; LATENCY                                        ; 0            ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
-; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_46t     ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
-+------------------------------------------------+--------------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: Engine:e0|lpm_mult:Mult2           ;
 +------------------------------------------------+--------------+---------------------+
 ; Parameter Name                                 ; Value        ; Type                ;
@@ -2163,76 +1760,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: Engine:e1|lpm_mult:Mult2           ;
-+------------------------------------------------+--------------+---------------------+
-; Parameter Name                                 ; Value        ; Type                ;
-+------------------------------------------------+--------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 32           ; Untyped             ;
-; LPM_WIDTHB                                     ; 32           ; Untyped             ;
-; LPM_WIDTHP                                     ; 64           ; Untyped             ;
-; LPM_WIDTHR                                     ; 64           ; Untyped             ;
-; LPM_WIDTHS                                     ; 1            ; Untyped             ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
-; LPM_PIPELINE                                   ; 0            ; Untyped             ;
-; LATENCY                                        ; 0            ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
-; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_46t     ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
-+------------------------------------------------+--------------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Engine:e2|lpm_mult:Mult2           ;
-+------------------------------------------------+--------------+---------------------+
-; Parameter Name                                 ; Value        ; Type                ;
-+------------------------------------------------+--------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 32           ; Untyped             ;
-; LPM_WIDTHB                                     ; 32           ; Untyped             ;
-; LPM_WIDTHP                                     ; 64           ; Untyped             ;
-; LPM_WIDTHR                                     ; 64           ; Untyped             ;
-; LPM_WIDTHS                                     ; 1            ; Untyped             ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
-; LPM_PIPELINE                                   ; 0            ; Untyped             ;
-; LATENCY                                        ; 0            ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
-; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_46t     ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
-+------------------------------------------------+--------------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Engine:e3|lpm_mult:Mult2           ;
 +------------------------------------------------+--------------+---------------------+
 ; Parameter Name                                 ; Value        ; Type                ;
 +------------------------------------------------+--------------+---------------------+
@@ -2397,7 +1924,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+----------------------------+
 ; Name                                  ; Value                      ;
 +---------------------------------------+----------------------------+
-; Number of entity instances            ; 22                         ;
+; Number of entity instances            ; 12                         ;
 ; Entity Instance                       ; Engine:e0|lpm_mult:Mult1   ;
 ;     -- LPM_WIDTHA                     ; 32                         ;
 ;     -- LPM_WIDTHB                     ; 32                         ;
@@ -2486,94 +2013,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                       ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                         ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                         ;
-; Entity Instance                       ; Engine:e2|lpm_mult:Mult1   ;
-;     -- LPM_WIDTHA                     ; 32                         ;
-;     -- LPM_WIDTHB                     ; 32                         ;
-;     -- LPM_WIDTHP                     ; 64                         ;
-;     -- LPM_REPRESENTATION             ; SIGNED                     ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                         ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                         ;
-;     -- USE_EAB                        ; OFF                        ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                       ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                         ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                         ;
-; Entity Instance                       ; Engine:e2|lpm_mult:Mult4   ;
-;     -- LPM_WIDTHA                     ; 32                         ;
-;     -- LPM_WIDTHB                     ; 32                         ;
-;     -- LPM_WIDTHP                     ; 64                         ;
-;     -- LPM_REPRESENTATION             ; SIGNED                     ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                         ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                         ;
-;     -- USE_EAB                        ; OFF                        ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                       ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                         ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                         ;
-; Entity Instance                       ; Engine:e2|lpm_mult:Mult0   ;
-;     -- LPM_WIDTHA                     ; 32                         ;
-;     -- LPM_WIDTHB                     ; 32                         ;
-;     -- LPM_WIDTHP                     ; 64                         ;
-;     -- LPM_REPRESENTATION             ; SIGNED                     ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                         ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                         ;
-;     -- USE_EAB                        ; OFF                        ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                       ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                         ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                         ;
-; Entity Instance                       ; Engine:e2|lpm_mult:Mult3   ;
-;     -- LPM_WIDTHA                     ; 32                         ;
-;     -- LPM_WIDTHB                     ; 32                         ;
-;     -- LPM_WIDTHP                     ; 64                         ;
-;     -- LPM_REPRESENTATION             ; SIGNED                     ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                         ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                         ;
-;     -- USE_EAB                        ; OFF                        ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                       ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                         ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                         ;
-; Entity Instance                       ; Engine:e3|lpm_mult:Mult1   ;
-;     -- LPM_WIDTHA                     ; 32                         ;
-;     -- LPM_WIDTHB                     ; 32                         ;
-;     -- LPM_WIDTHP                     ; 64                         ;
-;     -- LPM_REPRESENTATION             ; SIGNED                     ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                         ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                         ;
-;     -- USE_EAB                        ; OFF                        ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                       ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                         ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                         ;
-; Entity Instance                       ; Engine:e3|lpm_mult:Mult4   ;
-;     -- LPM_WIDTHA                     ; 32                         ;
-;     -- LPM_WIDTHB                     ; 32                         ;
-;     -- LPM_WIDTHP                     ; 64                         ;
-;     -- LPM_REPRESENTATION             ; SIGNED                     ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                         ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                         ;
-;     -- USE_EAB                        ; OFF                        ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                       ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                         ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                         ;
-; Entity Instance                       ; Engine:e3|lpm_mult:Mult0   ;
-;     -- LPM_WIDTHA                     ; 32                         ;
-;     -- LPM_WIDTHB                     ; 32                         ;
-;     -- LPM_WIDTHP                     ; 64                         ;
-;     -- LPM_REPRESENTATION             ; SIGNED                     ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                         ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                         ;
-;     -- USE_EAB                        ; OFF                        ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                       ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                         ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                         ;
-; Entity Instance                       ; Engine:e3|lpm_mult:Mult3   ;
-;     -- LPM_WIDTHA                     ; 32                         ;
-;     -- LPM_WIDTHB                     ; 32                         ;
-;     -- LPM_WIDTHP                     ; 64                         ;
-;     -- LPM_REPRESENTATION             ; SIGNED                     ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                         ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                         ;
-;     -- USE_EAB                        ; OFF                        ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                       ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                         ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                         ;
 ; Entity Instance                       ; Engine:e0|lpm_mult:Mult2   ;
 ;     -- LPM_WIDTHA                     ; 32                         ;
 ;     -- LPM_WIDTHB                     ; 32                         ;
@@ -2586,28 +2025,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                         ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                         ;
 ; Entity Instance                       ; Engine:e1|lpm_mult:Mult2   ;
-;     -- LPM_WIDTHA                     ; 32                         ;
-;     -- LPM_WIDTHB                     ; 32                         ;
-;     -- LPM_WIDTHP                     ; 64                         ;
-;     -- LPM_REPRESENTATION             ; SIGNED                     ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                         ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                         ;
-;     -- USE_EAB                        ; OFF                        ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                       ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                         ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                         ;
-; Entity Instance                       ; Engine:e2|lpm_mult:Mult2   ;
-;     -- LPM_WIDTHA                     ; 32                         ;
-;     -- LPM_WIDTHB                     ; 32                         ;
-;     -- LPM_WIDTHP                     ; 64                         ;
-;     -- LPM_REPRESENTATION             ; SIGNED                     ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                         ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                         ;
-;     -- USE_EAB                        ; OFF                        ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                       ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                         ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                         ;
-; Entity Instance                       ; Engine:e3|lpm_mult:Mult2   ;
 ;     -- LPM_WIDTHA                     ; 32                         ;
 ;     -- LPM_WIDTHB                     ; 32                         ;
 ;     -- LPM_WIDTHP                     ; 64                         ;
@@ -2675,44 +2092,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------+
-; Port Connectivity Checks: "Engine:e3"           ;
-+---------------+-------+----------+--------------+
-; Port          ; Type  ; Severity ; Details      ;
-+---------------+-------+----------+--------------+
-; my_addr[1..0] ; Input ; Info     ; Stuck at VCC ;
-; my_addr[2]    ; Input ; Info     ; Stuck at GND ;
-+---------------+-------+----------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Engine:e1"                                                                                                                                                                             ;
++-------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                          ;
++-------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; my_addr     ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (2 bits) it drives.  The 2 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; my_addr[1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                     ;
+; my_addr[0]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                     ;
+; engine_addr ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (2 bits) it drives.  Extra input bit(s) "engine_addr[1..1]" will be connected to GND.                              ;
++-------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------+
-; Port Connectivity Checks: "Engine:e2"        ;
-+------------+-------+----------+--------------+
-; Port       ; Type  ; Severity ; Details      ;
-+------------+-------+----------+--------------+
-; my_addr[2] ; Input ; Info     ; Stuck at GND ;
-; my_addr[1] ; Input ; Info     ; Stuck at VCC ;
-; my_addr[0] ; Input ; Info     ; Stuck at GND ;
-+------------+-------+----------+--------------+
-
-
-+-------------------------------------------------+
-; Port Connectivity Checks: "Engine:e1"           ;
-+---------------+-------+----------+--------------+
-; Port          ; Type  ; Severity ; Details      ;
-+---------------+-------+----------+--------------+
-; my_addr[2..1] ; Input ; Info     ; Stuck at GND ;
-; my_addr[0]    ; Input ; Info     ; Stuck at VCC ;
-+---------------+-------+----------+--------------+
-
-
-+-------------------------------------------+
-; Port Connectivity Checks: "Engine:e0"     ;
-+---------+-------+----------+--------------+
-; Port    ; Type  ; Severity ; Details      ;
-+---------+-------+----------+--------------+
-; my_addr ; Input ; Info     ; Stuck at GND ;
-+---------+-------+----------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Engine:e0"                                                                                                                                                                               ;
++---------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                                                                                                                                                          ;
++---------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; my_addr       ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (2 bits) it drives.  The 2 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; my_addr[1..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                     ;
+; engine_addr   ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (2 bits) it drives.  Extra input bit(s) "engine_addr[1..1]" will be connected to GND.                              ;
++---------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------+
@@ -2733,12 +2133,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Coor_gen:u1"                                                                                                                                                                    ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; ckey ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (2 bits) it drives.  The 2 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:01:09     ;
+; Top            ; 00:00:43     ;
 +----------------+--------------+
 
 
@@ -2748,7 +2157,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed Nov 08 20:02:23 2017
+    Info: Processing started: Fri Nov 10 19:08:07 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mandel -c Mandel
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mandel.v
@@ -2779,23 +2188,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file img_ind
 Info (12021): Found 1 design units, including 1 entities, in source file vga_pll.v
     Info (12023): Found entity 1: vga_pll
 Info (12127): Elaborating entity "Mandel" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Mandel.v(35): truncated value with size 32 to match size of target (19)
-Warning (10034): Output port "LEDR[17..4]" at Mandel.v(5) has no driver
-Warning (10034): Output port "LEDG[7..1]" at Mandel.v(6) has no driver
+Warning (10230): Verilog HDL assignment warning at Mandel.v(37): truncated value with size 32 to match size of target (19)
+Warning (10034): Output port "LEDR[17..2]" at Mandel.v(10) has no driver
+Warning (10034): Output port "LEDG[7..1]" at Mandel.v(11) has no driver
 Info (12128): Elaborating entity "Coor_gen" for hierarchy "Coor_gen:u1"
-Warning (10230): Verilog HDL assignment warning at Coor_gen.v(35): truncated value with size 64 to match size of target (32)
+Warning (10230): Verilog HDL assignment warning at Coor_gen.v(36): truncated value with size 64 to match size of target (32)
 Warning (10230): Verilog HDL assignment warning at Coor_gen.v(42): truncated value with size 64 to match size of target (32)
+Warning (10230): Verilog HDL assignment warning at Coor_gen.v(50): truncated value with size 32 to match size of target (1)
 Info (12128): Elaborating entity "Mod_counter" for hierarchy "Coor_gen:u1|Mod_counter:x_cntr"
 Warning (10230): Verilog HDL assignment warning at Mod_counter.v(22): truncated value with size 32 to match size of target (10)
 Info (12128): Elaborating entity "Mod_counter" for hierarchy "Coor_gen:u1|Mod_counter:y_cntr"
 Warning (10230): Verilog HDL assignment warning at Mod_counter.v(22): truncated value with size 32 to match size of target (9)
 Info (12128): Elaborating entity "Engine" for hierarchy "Engine:e0"
-Warning (10230): Verilog HDL assignment warning at Engine.v(43): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at Engine.v(88): truncated value with size 64 to match size of target (32)
-Warning (10230): Verilog HDL assignment warning at Engine.v(91): truncated value with size 64 to match size of target (32)
-Warning (10230): Verilog HDL assignment warning at Engine.v(103): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at Engine.v(41): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at Engine.v(86): truncated value with size 64 to match size of target (32)
+Warning (10230): Verilog HDL assignment warning at Engine.v(89): truncated value with size 64 to match size of target (32)
+Warning (10230): Verilog HDL assignment warning at Engine.v(101): truncated value with size 32 to match size of target (16)
 Info (12128): Elaborating entity "Engine2VGA" for hierarchy "Engine2VGA:u3"
-Warning (10230): Verilog HDL assignment warning at Engine2VGA.v(58): truncated value with size 5 to match size of target (4)
 Info (12128): Elaborating entity "VGA" for hierarchy "VGA:vpg"
 Info (12128): Elaborating entity "VGA_Controller" for hierarchy "VGA:vpg|VGA_Controller:u0"
 Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(90): truncated value with size 32 to match size of target (10)
@@ -2868,9 +2277,9 @@ Info (12128): Elaborating entity "altpll" for hierarchy "engine_pll:u2|altpll:al
 Info (12130): Elaborated megafunction instantiation "engine_pll:u2|altpll:altpll_component"
 Info (12133): Instantiated megafunction "engine_pll:u2|altpll:altpll_component" with the following parameter:
     Info (12134): Parameter "bandwidth_type" = "AUTO"
-    Info (12134): Parameter "clk0_divide_by" = "1"
+    Info (12134): Parameter "clk0_divide_by" = "25"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
-    Info (12134): Parameter "clk0_multiply_by" = "2"
+    Info (12134): Parameter "clk0_multiply_by" = "46"
     Info (12134): Parameter "clk0_phase_shift" = "0"
     Info (12134): Parameter "compensate_clock" = "CLK0"
     Info (12134): Parameter "inclk0_input_frequency" = "20000"
@@ -3014,7 +2423,7 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "engine_word[1]" into a selector
     Warning (13048): Converted tri-state node "engine_word[0]" into a selector
 Info (13005): Duplicate registers merged to single register
-Info (278001): Inferred 22 megafunctions from design logic
+Info (278001): Inferred 12 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e0|Mult1"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e0|Mult4"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e0|Mult0"
@@ -3023,18 +2432,8 @@ Info (278001): Inferred 22 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e1|Mult4"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e1|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e1|Mult3"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e2|Mult1"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e2|Mult4"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e2|Mult0"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e2|Mult3"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e3|Mult1"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e3|Mult4"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e3|Mult0"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e3|Mult3"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e0|Mult2"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e1|Mult2"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e2|Mult2"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Engine:e3|Mult2"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Coor_gen:u1|Mult1"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Coor_gen:u1|Mult0"
 Info (12130): Elaborated megafunction instantiation "Engine:e0|lpm_mult:Mult1"
@@ -3087,12 +2486,14 @@ Info (12133): Instantiated megafunction "Coor_gen:u1|lpm_mult:Mult0" with the fo
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_sgt.tdf
     Info (12023): Found entity 1: mult_sgt
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13014): Ignored 5023 buffer(s)
-    Info (13019): Ignored 5023 SOFT buffer(s)
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13014): Ignored 2675 buffer(s)
+    Info (13019): Ignored 2675 SOFT buffer(s)
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[2]" is stuck at GND
+    Warning (13410): Pin "LEDR[3]" is stuck at GND
     Warning (13410): Pin "LEDR[4]" is stuck at GND
     Warning (13410): Pin "LEDR[5]" is stuck at GND
     Warning (13410): Pin "LEDR[6]" is stuck at GND
@@ -3116,16 +2517,10 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDG[7]" is stuck at GND
     Warning (13410): Pin "VGA_SYNC_N" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 15 registers lost all their fanouts during netlist optimizations. The first 15 are displayed below.
+Info (17049): 9 registers lost all their fanouts during netlist optimizations. The first 9 are displayed below.
     Info (17050): Register "Engine2VGA:u3|state~4" lost all its fanouts during netlist optimizations.
     Info (17050): Register "Engine2VGA:u3|state~5" lost all its fanouts during netlist optimizations.
     Info (17050): Register "Engine2VGA:u3|state~6" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "Engine:e3|state~4" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "Engine:e3|state~5" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "Engine:e3|state~6" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "Engine:e2|state~4" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "Engine:e2|state~5" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "Engine:e2|state~6" lost all its fanouts during netlist optimizations.
     Info (17050): Register "Engine:e1|state~4" lost all its fanouts during netlist optimizations.
     Info (17050): Register "Engine:e1|state~5" lost all its fanouts during netlist optimizations.
     Info (17050): Register "Engine:e1|state~6" lost all its fanouts during netlist optimizations.
@@ -3158,18 +2553,18 @@ Warning (21074): Design contains 21 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]"
     Warning (15610): No output dependent on input pin "KEY[2]"
     Warning (15610): No output dependent on input pin "KEY[3]"
-Info (21057): Implemented 5072 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3103 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 55 output pins
-    Info (21061): Implemented 4490 logic cells
+    Info (21061): Implemented 2601 logic cells
     Info (21064): Implemented 328 RAM segments
     Info (21065): Implemented 2 PLLs
-    Info (21062): Implemented 174 DSP elements
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 98 warnings
-    Info: Peak virtual memory: 447 megabytes
-    Info: Processing ended: Wed Nov 08 20:03:06 2017
-    Info: Elapsed time: 00:00:43
-    Info: Total CPU time (on all processors): 00:00:44
+    Info (21062): Implemented 94 DSP elements
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 100 warnings
+    Info: Peak virtual memory: 381 megabytes
+    Info: Processing ended: Fri Nov 10 19:08:37 2017
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +------------------------------------------+

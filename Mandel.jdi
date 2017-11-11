@@ -1,6 +1,6 @@
 <sld_project_info>
   <file_info>
-    <file checksum="0x02CC2D17" device="EP4CE115F29C7" path="Mandel.sof" usercode="0xFFFFFFFF"/>
+    <file checksum="0x02BD53D3" device="EP4CE115F29C7" path="Mandel.sof" usercode="0xFFFFFFFF"/>
   </file_info>
   <hub_info ir_width="0" node_count="0"/>
   <node_info/>

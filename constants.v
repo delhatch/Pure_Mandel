@@ -1,1 +1,1 @@
-localparam NUM_PROC = 1;
+localparam NUM_PROC = 1; // comment

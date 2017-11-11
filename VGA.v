@@ -37,7 +37,7 @@ assign export_VGA_G = L_VGA_G[9:2];
 assign export_VGA_B = L_VGA_B[9:2];
 
 VGA_Controller		u0	(	//	Host Side
-								.iCursor_RGB_EN( 4'b0111 ),
+								.iCursor_RGB_EN( 4'b0111 ),  // Disable cursor. Enable r,g,b outputs.
 								.iCursor_X( 10'd100 ),
 								.iCursor_Y( 10'd100 ),
 								.iCursor_R( 10'hfff ),
@@ -61,7 +61,6 @@ VGA_Controller		u0	(	//	Host Side
 								.iRST_N( iRST_N )
 							);
 
-
 // Holds the image. Each 8-bit value refers to a 24-bit color in the look-up table.
 my_img_data img_data_inst (
    .rdaddress( mVGA_ADDR ),
@@ -82,15 +81,11 @@ img_index	img_index_inst (
 
 //latch valid data at falling edge;
 always @( posedge iCLK_25 ) 
-	bgr_data <= bgr_data_raw;
-//red	
+   bgr_data <= bgr_data_raw;
+
 assign b_data = bgr_data[23:16];
-//green
 assign g_data = bgr_data[15:8];
-//blue
 assign r_data = bgr_data[7:0];
-
-
 
 endmodule
 
