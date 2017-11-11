@@ -52,6 +52,8 @@ There are a few areas where improvements are possible:
 
 2) The engines consume 20 of the 9-bit embedded multiplier blocks. With 12 engines, 93% of them are used, so if any reductions are possible here it would allow for more engines to be instantiated.
 
+3) It would be interesting to implement the ability to use the DE2-15 buttons to zoom in on the mandelbrot image.
+
 
 
 

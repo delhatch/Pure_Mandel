@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Fri Nov 10 19:08:37 2017
+Analysis & Synthesis Status : Successful - Fri Nov 10 20:35:48 2017
 Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
 Revision Name : Mandel
 Top-level Entity Name : Mandel
 Family : Cyclone IV E
-Total logic elements : 2,548
-    Total combinational functions : 2,393
-    Dedicated logic registers : 758
-Total registers : 758
+Total logic elements : 12,052
+    Total combinational functions : 11,157
+    Dedicated logic registers : 3,851
+Total registers : 3851
 Total pins : 78
 Total virtual pins : 0
 Total memory bits : 2,463,744
-Embedded Multiplier 9-bit elements : 94
+Embedded Multiplier 9-bit elements : 494
 Total PLLs : 2
