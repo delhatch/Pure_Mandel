@@ -79,7 +79,7 @@ img_index	img_index_inst (
 	.q ( bgr_data_raw)
 	);	
 
-//latch valid data at falling edge;
+//will latch valid data at falling edge;
 always @( posedge iCLK_25 ) 
    bgr_data <= bgr_data_raw;
 

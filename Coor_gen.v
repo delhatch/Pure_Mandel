@@ -11,27 +11,21 @@ module Coor_gen
 	output frame    // pulses at the start, and at the end, of a frame.
 );
 
-//parameter NUM_PROC = 4;
-//parameter E_ADDR_WIDTH = 3;// log2( NUM_PROC );  // Number of bits in engine address bus.
-localparam step_size = 32'h02666666; // This is 0.0046875 (the step size) multiplied by 2**9.
+localparam step_size = 32'h02666666; // This is 0.0046875 (the step size) multiplied by 2**9. Q8.15.
 
 wire [9:0] x_value;
 wire [8:0] y_value;
 wire y_max_tick;
 wire null_wire;
 
-//wire cpause;
 reg signed [63:0] temp1, temp2, temp3, temp4, temp5, temp6;
 reg signed [31:0] outx, outy;
-//reg [C_ADDR_WIDTH:0] big_cengine_addr;  // one more bit than c_engine_addr
 wire none_done;
 
 assign none_done = ~( |(cdones) );  // high if all engines are busy (none are finished calculating yet)
 
-//assign cengine_addr = big_cengine_addr[C_ADDR_WIDTH-1:0];
-
 always @ ( x_value ) begin
-   temp2 = x_value <<< 15; // would be <<< 24 to align, but then divide by 2**9.
+   temp2 = x_value <<< 15; // would be <<< 24 to align decimal points, but then divide by 2**9.
    temp3 = ((temp2 * step_size)>>>24);
    outx = temp3 - 32'h02000000;
 end
@@ -68,7 +62,7 @@ always @ ( negedge cclk )  // Determine the addr of an engine needing service.
 		default : big_cengine_addr = 5'b10000;// MSB=1 indicates there are no engines needing service.
 	endcase
 */
-/*  Also works
+/*  Also works.
 always @ ( cdones ) begin
 	if ( !(|(cdones)) ) big_cengine_addr = 5'b10000;  // using MSB as "none_done" indicator.
 	  else

@@ -20,12 +20,12 @@ reg [`NUM_PROC-1:0] calc_req_ack;  // one-hot. indicates which engine will get a
 always @ ( posedge clk_iCLK or posedge reset ) begin
    if( reset ) begin
 	   state <= state_a;
-	   write_iWR_en <= 1'b0;      // Tell RAM not writing to it.
+	   write_iWR_en <= 1'b0;      // Tell RAM that no one needs to write a result into it.
 		end
 	else
 	   case( state )
 		   state_a : begin
-						   write_iWR_en <= 1'b0;      // Tell RAM not writing to it.
+						   write_iWR_en <= 1'b0;      // Tell RAM no one is writing to it.
 						   req_ack <= 0;              // Tell all engines to get off the bus.
 						   // Stay here until there is a request for service.
 						   state <= ( |(calc_req_ack) ) ? state_b : state_a;
@@ -39,7 +39,7 @@ always @ ( posedge clk_iCLK or posedge reset ) begin
 		
 			state_c : begin
 					   	write_iWR_en <= 1'b0;
-					   	req_ack <= 0;           // Assumes hold time for WR to RAM = zero-ish
+					   	req_ack <= 0;
 					   	state <= state_d;
 					    end
 		
@@ -80,7 +80,7 @@ always @ ( negedge clk_iCLK )
 		12'bxx1000000000 : calc_req_ack = 12'b001000000000;
 		12'bx10000000000 : calc_req_ack = 12'b010000000000;
 		12'b100000000000 : calc_req_ack = 12'b100000000000;
-		default : calc_req_ack = 12'b000000000000;
+		default : calc_req_ack = 12'b000000000000;  // Could do "full_case", but "default" is better form.
 	endcase
 */
 

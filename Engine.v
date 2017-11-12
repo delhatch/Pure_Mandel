@@ -2,7 +2,7 @@
 module Engine (
    input [`E_ADDR_WIDTH:0] my_addr,
 	input [`E_ADDR_WIDTH:0] engine_addr,
-	input [82:0] in_word,
+	input [82:0] in_word, // 10 bits x screen coor, 9 bits y screen coor, x coor in Q8.15, y coor in Q8.15.
 	input latch_en,             // also indicates "GO" (assuming the address matches)
 	input eRST,
 	input Engine_CLK,
@@ -12,7 +12,7 @@ module Engine (
 	output reg service_req
 );
 
-parameter MAX_ITERATIONS = 255;  // Do not exceed 65535.
+parameter MAX_ITERATIONS = 255;  // Do not exceed 65535. Counting happens in ItrCounter[15:0].
 localparam	state_a = 3'b000,
 				state_b = 3'b001,
 				state_c = 3'b010,
@@ -40,9 +40,9 @@ assign eRegRe = latched_word[63:32];
 assign eRegIm = latched_word[31:0];
 assign eMaxItr = MAX_ITERATIONS;
 
-// Tri-state output example from "Verilog HDL Synthesis" pg.94
+// Tri-state output. All engines share this bus to place results onto. Goes into frame buffer RAM.
 assign out_word = req_ack ? {x_coor, y_coor, ItrCounter[7:0]} : 27'hzzzzzzz;
-// The Coor_gen block (generator of coordinates) is trying to give me new coordinates.
+// The Coor_gen block (generator of coordinates) is signalling it has new coordinates for me.
 assign address_match = (engine_addr == my_addr) ? 1'b1 : 1'b0;
 
 // State machine ------------------------------------------------
@@ -80,11 +80,9 @@ always @ ( posedge Engine_CLK or posedge eRST ) begin
 					 end
 		
 		state_c : begin
-						//NewRe <= ((OldRe * OldRe)>>>24) - ((OldIm * OldIm)>>>24) + eRegRe;
 						temp1 = (OldRe * OldRe)>>>24;
 						temp2 = (OldIm * OldIm)>>>24;
 						NewRe <= temp1 - temp2 + eRegRe;
-						//NewIm <= (((2 * OldRe) * OldIm)>>>24) + eRegIm;
 						temp4 = (OldRe * OldIm)>>>24;
 						NewIm <= (2 * temp4) + eRegIm;
 						state <= state_d;
@@ -93,8 +91,7 @@ always @ ( posedge Engine_CLK or posedge eRST ) begin
 		state_d : begin
 		            temp1 <= ((NewRe * NewRe) >>> 24);
 		            temp2 <= ((NewIm * NewIm) >>> 24);
-						    if( (temp1 + temp2) > 32'h04000000 ) begin
-						      //service_req <= 1'b1;
+						    if( (temp1 + temp2) > 32'h04000000 ) begin  // done. point not in mandelbrot set.
 							    state <= state_f;
 							    end
 						    else begin
@@ -104,25 +101,24 @@ always @ ( posedge Engine_CLK or posedge eRST ) begin
 					     end
 					 
 		state_e : begin
-						if( ItrCounter == eMaxItr ) begin
-							//service_req <= 1'b1;
+						if( ItrCounter == eMaxItr ) begin  // exceeded max allowed iterations?
 							state <= state_f;
 							end
 						else state <= state_b;
 					 end
 					 
-		state_f : begin  // hold here until we get an ack signal
+		state_f : begin       // hold here until we get an ack signal
 		            service_req <= 1'b1;
 		            if( ~req_ack ) state <= state_f;
 		              else state <= state_g;
 		          end
 		          
     state_g : begin		// hold here until req_ack falls and
-                      // coord gen is ready to assign a new coordinate.
-                  service_req <= 1'b0;  // Being serviced. Stop asking.
+                        // coord gen is ready to assign a new coordinate.
+                  service_req <= 1'b0;  // Am now being serviced. I can stop asking for service.
 						if( (req_ack) || (latch_en) ) state <= state_g;
 						else begin
-						available <= 1'b1;   // Signal that this engine is now available.
+						available <= 1'b1;   // Results have been latched. Signal that this engine is now available.
 						state <= state_a;
 						end
 				  end
