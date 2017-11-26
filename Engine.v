@@ -15,7 +15,6 @@ module Engine (
 	output reg service_req
 );
 
-parameter MAX_ITERATIONS = 65535;  // Do not exceed 65535. Counting happens in ItrCounter[15:0].
 localparam	state_a = 3'b000,
 				state_b = 3'b001,
 				state_c = 3'b010,
@@ -32,7 +31,6 @@ reg signed [63:0] temp1, temp2, temp3, temp4;
 reg [15:0] ItrCounter;  // Numer of iterations completed w/o escaping
 reg [82:0] latched_word;
 reg greater;
-wire [15:0] eMaxItr;
 wire [31:0] eRegRe, eRegIm;
 wire [9:0] x_coor;
 wire [8:0] y_coor;
@@ -42,7 +40,6 @@ assign x_coor = latched_word[82:73];
 assign y_coor = latched_word[72:64];
 assign eRegRe = latched_word[63:32];
 assign eRegIm = latched_word[31:0];
-assign eMaxItr = MAX_ITERATIONS;
 
 // Tri-state output. All engines share this bus to place results onto. Goes into frame buffer RAM.
 assign out_word = req_ack ? {x_coor, y_coor, ItrCounter[7:0]} : 27'hzzzzzzz;
@@ -101,7 +98,7 @@ always @ ( posedge Engine_CLK or posedge eRST ) begin
 					     end
 					 
 		state_e : begin
-						if( ItrCounter == eMaxItr ) begin  // exceeded max allowed iterations?
+						if( ItrCounter == `MAX_ITERATIONS ) begin  // exceeded max allowed iterations?
 							state <= state_f;
 							end
 						else state <= state_b;

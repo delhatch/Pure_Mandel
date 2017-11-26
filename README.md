@@ -48,11 +48,13 @@ Note: This compares favorably to a pure NIOS II soft-core processor running at 5
 
 There are a few areas where improvements are possible:
 
-1) It may be possible to reduce the cycles needed by the coordinate-generating state machine, although it is not the bottleneck in regions requiring more than 1 iteration to calculate (which is almost everywhere!). It may be possible to take a cycle out of the calculating engines.
+1) I think it is possible to reduce the number of multiplications in the engine algorithm. This could allow for faster calculations.
 
 2) The engines consume 20 of the 9-bit embedded multiplier blocks. With 12 engines, 93% of them are used, so if any reductions are possible here it would allow for more engines to be instantiated.
 
 3) It would be interesting to implement the ability to use the DE2-15 buttons to zoom in on the mandelbrot image.
+
+4) Coloring improvements. There are various coloring algorithms that would be an improvement. Would require changing the imag_index.v ROM pre-loaded lookup table. File is index_logo1151.mif.
 
 
 
