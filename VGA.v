@@ -1,3 +1,7 @@
+// This module creates the VGA waveform.
+
+`include "mandel_constants.vh"
+
 module VGA (
    // Host Side
 	input [7:0] writedata_iDATA,   // Data going into the dual-port RAM.

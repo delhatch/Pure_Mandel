@@ -1,16 +1,14 @@
 // Creates VGA mandelbrot w/ pure logic. No Nios.
-// Number of mandelbrot engines to instantiate
-`define NUM_PROC 12
-// Number of bits in engine address bus.
-`define E_ADDR_WIDTH 4
 // Note: With 12 engines, the max clock freq. is around 92 MHz with DE2-115 (EP4CE115F29C7).
 //       It can calculate 13.56 frames per second.
 //    With only 4 engines, fmax is ~100 MHz. 5.04 frames per second.
 
+`include "mandel_constants.vh"
+
 module Mandel (
 	input [17:0] SW,
 	input [3:0] KEY,
-	output reg [17:0] LEDR,
+	output [17:0] LEDR,
 	output [7:0] LEDG,
 	input CLOCK_50,
    //////// VGA //////////
@@ -222,7 +220,8 @@ VGA vpg (
 	.iCLK_25( VGA_clock )         // VGA pixel clock in.
 );
 
-// Set up Engine PLL. Output c0 is 100 MHz for the computation engines.
+// Set up Engine PLL. Output c0 is ~100 MHz for the computation engines, depending
+//    on the number of engines instantiated. (92 MHz for 12 engines, 100 MHz for four)
 engine_pll u2 (
 	.inclk0( CLOCK_50 ),
 	.c0( engine_clock )
@@ -238,11 +237,13 @@ vga_pll u4 (
 
 // If an engine is working then light up it's LED. (1->LED = illuminated)
 // Tested.
-integer h;
-always @( dones )
-begin
-  for (h=0; h<`NUM_PROC; h=h+1) LEDR[h] = dones[h];
-end
+//integer h;
+//always @( dones )
+//begin
+ // for (h=0; h<`NUM_PROC; h=h+1) LEDR[h] = dones[h];
+//end
+
+assign LEDR[`NUM_PROC-1:0] = dones[`NUM_PROC-1:0];
 
 function integer log2(input integer n); // 1 in = 2. 2 in = 2. 4 in = 3. etc...
 	integer i;

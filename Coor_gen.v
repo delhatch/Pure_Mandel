@@ -1,3 +1,10 @@
+// This module runs through each x,y screen pixel (640 x 480) and calculates
+//   the associated values in x + iy mandelbrot space.
+// It then passes these values to any calculating engine that is available to run the
+//   algorithm.
+
+`include "mandel_constants.vh"
+
 module Coor_gen 
 #( parameter C_ADDR_WIDTH )
 (

@@ -1,4 +1,7 @@
 // Calculating engine. Executes the mandelbrot algorithm.
+
+`include "mandel_constants.vh"
+
 module Engine (
    input [`E_ADDR_WIDTH:0] my_addr,
 	input [`E_ADDR_WIDTH:0] engine_addr,
@@ -12,7 +15,7 @@ module Engine (
 	output reg service_req
 );
 
-parameter MAX_ITERATIONS = 255;  // Do not exceed 65535. Counting happens in ItrCounter[15:0].
+parameter MAX_ITERATIONS = 65535;  // Do not exceed 65535. Counting happens in ItrCounter[15:0].
 localparam	state_a = 3'b000,
 				state_b = 3'b001,
 				state_c = 3'b010,
@@ -24,10 +27,11 @@ localparam	state_a = 3'b000,
 // Wire declarations
 reg [2:0] state = 3'b000;
 reg signed [31:0] NewRe, OldRe, NewIm, OldIm;
-reg signed [31:0] shorttemp;
+reg signed [31:0] temp5, temp6;
 reg signed [63:0] temp1, temp2, temp3, temp4;
 reg [15:0] ItrCounter;  // Numer of iterations completed w/o escaping
 reg [82:0] latched_word;
+reg greater;
 wire [15:0] eMaxItr;
 wire [31:0] eRegRe, eRegIm;
 wire [9:0] x_coor;
@@ -79,19 +83,15 @@ always @ ( posedge Engine_CLK or posedge eRST ) begin
 						state <= state_c;
 					 end
 		
-		state_c : begin
-						temp1 = (OldRe * OldRe)>>>24;
-						temp2 = (OldIm * OldIm)>>>24;
-						NewRe <= temp1 - temp2 + eRegRe;
-						temp4 = (OldRe * OldIm)>>>24;
-						NewIm <= (2 * temp4) + eRegIm;
+		state_c : begin    // This state does nothing but give the combinatorial section time
+                         //    to finish. Psuedo-pipeline. Keeps max engine clock high.
 						state <= state_d;
 					 end
 					 
 		state_d : begin
-		            temp1 <= ((NewRe * NewRe) >>> 24);
-		            temp2 <= ((NewIm * NewIm) >>> 24);
-						    if( (temp1 + temp2) > 32'h04000000 ) begin  // done. point not in mandelbrot set.
+      				 NewRe <= temp5;
+						 NewIm <= temp6;
+						    if( greater == 1'b1  ) begin  // done. point not in mandelbrot set.
 							    state <= state_f;
 							    end
 						    else begin
@@ -127,5 +127,16 @@ always @ ( posedge Engine_CLK or posedge eRST ) begin
 		
 	endcase
 end     // end of state logic
+
+always @(*) begin  // Mandelbrot complex math routine.
+   temp1 = (OldRe * OldRe)>>>24;
+   temp2 = (OldIm * OldIm)>>>24;
+   temp5 = temp1 - temp2 + eRegRe;
+   temp4 = (OldRe * OldIm)>>>24;
+   temp6 = (2 * temp4) + eRegIm;
+   temp1 = ((temp5 * temp5) >>> 24);
+   temp2 = ((temp6 * temp6) >>> 24);
+   greater = ( (temp1 + temp2) > 32'h04000000 ) ? 1'b1 : 1'b0;
+end
 
 endmodule
