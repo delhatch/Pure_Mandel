@@ -74,7 +74,6 @@ always @ ( posedge Engine_CLK or posedge eRST ) begin
 						end
 		
 		state_b : begin
-		        available <= 1'b0;   // Signal that this engine is busy.
 						OldRe <= NewRe;
 						OldIm <= NewIm;
 						state <= state_c;
@@ -84,39 +83,35 @@ always @ ( posedge Engine_CLK or posedge eRST ) begin
                          //    to finish. Psuedo-pipeline. Keeps max engine clock high.
 						state <= state_d;
 					 end
-					 
+
 		state_d : begin
       				 NewRe <= temp5;
 						 NewIm <= temp6;
-						    if( greater == 1'b1  ) begin  // done. point not in mandelbrot set.
-							    state <= state_f;
-							    end
-						    else begin
+						 if( greater == 1'b1  ) begin  // done. point not in mandelbrot set.
+							 state <= state_f;
+							 end
+						 else if( (ItrCounter + 1) == `MAX_ITERATIONS ) state <= state_f;
+                   else begin
 							    ItrCounter <= ItrCounter + 1;
-							    state <= state_e;
+							    state <= state_b;
 							   end
-					     end
-					 
-		state_e : begin
-						if( ItrCounter == `MAX_ITERATIONS ) begin  // exceeded max allowed iterations?
-							state <= state_f;
-							end
-						else state <= state_b;
-					 end
+					  end
 					 
 		state_f : begin       // hold here until we get an ack signal
 		            service_req <= 1'b1;
 		            if( ~req_ack ) state <= state_f;
-		              else state <= state_g;
+		            else begin
+                     service_req <= 1'b0;  // Am now being serviced. I can stop asking for service.
+                     state <= state_g;
+                     end
 		          end
 		          
-    state_g : begin		// hold here until req_ack falls and
+      state_g : begin		// hold here until req_ack falls and
                         // coord gen is ready to assign a new coordinate.
-                  service_req <= 1'b0;  // Am now being serviced. I can stop asking for service.
 						if( (req_ack) || (latch_en) ) state <= state_g;
 						else begin
-						available <= 1'b1;   // Results have been latched. Signal that this engine is now available.
-						state <= state_a;
+						   available <= 1'b1;   // Results have been latched. Signal that this engine is now available.
+						   state <= state_a;
 						end
 				  end
 					     				 
@@ -130,7 +125,7 @@ always @(*) begin  // Mandelbrot complex math routine.
    temp2 = (OldIm * OldIm)>>>24;
    temp5 = temp1 - temp2 + eRegRe;
    temp4 = (OldRe * OldIm)>>>24;
-   temp6 = (2 * temp4) + eRegIm;
+   temp6 = (temp4 << 1) + eRegIm;   // ( 2 * temp4 )
    temp1 = ((temp5 * temp5) >>> 24);
    temp2 = ((temp6 * temp6) >>> 24);
    greater = ( (temp1 + temp2) > 32'h04000000 ) ? 1'b1 : 1'b0;

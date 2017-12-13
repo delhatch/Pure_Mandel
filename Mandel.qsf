@@ -41,13 +41,12 @@ set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY Mandel
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "11.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:18:28  NOVEMBER 05, 2017"
-set_global_assignment -name LAST_QUARTUS_VERSION "11.1 SP2"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name VERILOG_FILE Mandel.v
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_D2 -to AUD_ADCDAT
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_ADCDAT
@@ -1103,6 +1102,10 @@ set_global_assignment -name MISC_FILE "C:/Users/Administrator/OneDrive/fpga/alte
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_INCLUDE_FILE mandel_constants.vh
+set_global_assignment -name VERILOG_FILE Mandel.v
 set_global_assignment -name VERILOG_FILE Coor_gen.v
 set_global_assignment -name VERILOG_FILE Mod_counter.v
 set_global_assignment -name VERILOG_FILE Coor_gen_tb.v
@@ -1117,4 +1120,5 @@ set_global_assignment -name QIP_FILE my_img_data.qip
 set_global_assignment -name QIP_FILE img_index.qip
 set_global_assignment -name QIP_FILE vga_pll.qip
 set_global_assignment -name VERILOG_FILE vga_pll.v
+set_global_assignment -name QIP_FILE enigne_pll.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
