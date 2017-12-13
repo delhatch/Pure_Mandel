@@ -34,13 +34,13 @@ The VGA.v together with the VGA_controller.v modules create the 640x480 color VG
 
 ** Performance
 
-As more engines are instantiated, the image frame rate increases.
+As more engines are instantiated, the image frame rate increases. Note that the engines are in their own clock domain, so by simply changing the file engine_pll.v it is possible to maximize the frame rate for various speed grades of FPGA.
 
 4 engines -> 5.04 frames per second
 
 8 engines -> 9.37 frames per second
 
-12 engines -> 13.56 frames per second
+12 engines -> 15.35 frames per second. (Engines running at 84 MHz.)
 
 Note: This compares very favorably to a pure NIOS II soft-core processor running at 50 MHz that takes over 12 minutes to calculate a single frame.(!)
 
