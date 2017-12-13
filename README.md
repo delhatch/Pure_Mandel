@@ -22,7 +22,7 @@ If C has not exceeded the threshold value after a predetermined number of iterat
 
 The Verilog code creates the logic necessary to implement the function for each pixel and create a 640x480 pixel VGA output.
 
-The heart of the implementation is the "pool" of up to 12 (tested) calculation engines. The engines run a state machine operating on Q8.24 integers. Each iteration requires 4 cycles.
+The heart of the implementation is the "pool" of up to 12 (tested) calculation engines. The engines run a state machine operating on Q8.24 integers. Each iteration requires 4 clock cycles.
 
 Using the Altera EP4CE115F29C7 FPGA on the DE2-115 kit, up to 12 engines can be instantiated. See the performance metrics below.
 
