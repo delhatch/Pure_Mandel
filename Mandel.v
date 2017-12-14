@@ -18,7 +18,7 @@ module Mandel (
 	output [7:0] VGA_G,
 	output VGA_HS,
 	output [7:0] VGA_R,
-	output VGA_SYNC_N,
+	//output VGA_SYNC_N,
 	output VGA_VS
 );
 
@@ -37,7 +37,7 @@ wire top_frame;
 assign LEDG[0] = top_frame;
 assign ram_address = engine_word[26:17] + ( engine_word[16:8] * 640 ); // x+y*640
 assign ram_data = engine_word[7:0];
-assign top_reset = SW[0];
+assign top_reset = 1'b0; //SW[0];
 
 Coor_gen #( .C_ADDR_WIDTH(`E_ADDR_WIDTH) ) u1 (
 	.cclk( engine_clock ),		// into
@@ -214,7 +214,7 @@ VGA vpg (
 	.export_VGA_B( VGA_B ),
 	.export_VGA_HS( VGA_HS ),
 	.export_VGA_VS( VGA_VS ),
-	.export_VGA_SYNC( VGA_SYNC_N ),
+	//.export_VGA_SYNC( VGA_SYNC_N ),
 	.export_VGA_BLANK( VGA_BLANK_N ),
 	.export_VGA_CLK( VGA_CLK ),   // out to the VGA connector
 	.iCLK_25( VGA_clock )         // VGA pixel clock in.

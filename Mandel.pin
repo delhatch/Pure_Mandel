@@ -353,7 +353,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8         :                
 VGA_G[4]                     : C8        : output : 3.3-V LVTTL       :         : 8         : Y              
 VGA_G[7]                     : C9        : output : 3.3-V LVTTL       :         : 8         : Y              
-VGA_SYNC_N                   : C10       : output : 3.3-V LVTTL       :         : 8         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C10       :        :                   :         : 8         :                
 VGA_B[2]                     : C11       : output : 3.3-V LVTTL       :         : 8         : Y              
 VGA_B[5]                     : C12       : output : 3.3-V LVTTL       :         : 8         : Y              
 VGA_VS                       : C13       : output : 3.3-V LVTTL       :         : 8         : Y              

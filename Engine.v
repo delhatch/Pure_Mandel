@@ -81,11 +81,19 @@ always @ ( posedge Engine_CLK or posedge eRST ) begin
 		
 		state_c : begin    // This state does nothing but give the combinatorial section time
                          //    to finish. Psuedo-pipeline. Keeps max engine clock high.
-						state <= state_d;
+                   temp1 = (OldRe * OldRe)>>>24;
+                   temp2 = (OldIm * OldIm)>>>24;
+                   temp5 <= temp1 - temp2 + eRegRe;
+                   temp4 = (OldRe * OldIm)>>>24;
+                   temp6 <= (temp4 << 1) + eRegIm;   // ( 2 * temp4 )
+						 state <= state_d;
 					 end
 
 		state_d : begin
-      				 NewRe <= temp5;
+      	          temp1 = ((temp5 * temp5) >>> 24);
+                   temp2 = ((temp6 * temp6) >>> 24);
+                   greater = ( (temp1 + temp2) > 32'h04000000 ) ? 1'b1 : 1'b0;
+                   NewRe <= temp5;
 						 NewIm <= temp6;
 						 if( greater == 1'b1  ) begin  // done. point not in mandelbrot set.
 							 state <= state_f;
@@ -120,6 +128,7 @@ always @ ( posedge Engine_CLK or posedge eRST ) begin
 	endcase
 end     // end of state logic
 
+/*
 always @(*) begin  // Mandelbrot complex math routine.
    temp1 = (OldRe * OldRe)>>>24;
    temp2 = (OldIm * OldIm)>>>24;
@@ -130,5 +139,6 @@ always @(*) begin  // Mandelbrot complex math routine.
    temp2 = ((temp6 * temp6) >>> 24);
    greater = ( (temp1 + temp2) > 32'h04000000 ) ? 1'b1 : 1'b0;
 end
+*/
 
 endmodule

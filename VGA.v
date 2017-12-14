@@ -15,7 +15,7 @@ module VGA (
 	output [7:0] export_VGA_B,
 	output export_VGA_HS,
 	output export_VGA_VS,
-	output export_VGA_SYNC,
+	//output export_VGA_SYNC,
 	output export_VGA_BLANK,
 	output export_VGA_CLK,
 	input  iCLK_25	    // VGA pixel clock in.
@@ -44,9 +44,9 @@ VGA_Controller		u0	(	//	Host Side
 								.iCursor_RGB_EN( 4'b0111 ),  // Disable cursor. Enable r,g,b outputs.
 								.iCursor_X( 10'd100 ),
 								.iCursor_Y( 10'd100 ),
-								.iCursor_R( 10'hfff ),
-								.iCursor_G( 10'hfff ),
-								.iCursor_B( 10'hfff ),							
+								.iCursor_R( 10'b11_1111_1111 ),
+								.iCursor_G( 10'b11_1111_1111 ),
+								.iCursor_B( 10'b11_1111_1111 ),							
 								.oAddress( mVGA_ADDR ),
 								.iRed ( mMouse_R ),
 								.iGreen ( mMouse_G ),
@@ -57,7 +57,7 @@ VGA_Controller		u0	(	//	Host Side
 								.oVGA_B( L_VGA_B ),
 								.oVGA_H_SYNC( export_VGA_HS ),
 								.oVGA_V_SYNC( export_VGA_VS ),
-								.oVGA_SYNC( export_VGA_SYNC ),
+								//.oVGA_SYNC( export_VGA_SYNC ),
 								.oVGA_BLANK( export_VGA_BLANK ),
 								.oVGA_CLOCK( export_VGA_CLK ),    // Is simply assigned ~iCLK_25 in this module.
 								//	Control Signal

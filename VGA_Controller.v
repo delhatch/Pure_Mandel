@@ -17,7 +17,7 @@ module	VGA_Controller(	//	Host Side
 						oVGA_B,
 						oVGA_H_SYNC,
 						oVGA_V_SYNC,
-						oVGA_SYNC,
+						//oVGA_SYNC,
 						oVGA_BLANK,
 						oVGA_CLOCK,
 						//	Control Signal
@@ -59,7 +59,7 @@ output		[9:0]	oVGA_G;
 output		[9:0]	oVGA_B;
 output	reg			oVGA_H_SYNC;
 output	reg			oVGA_V_SYNC;
-output				oVGA_SYNC;
+//output				oVGA_SYNC;
 output				oVGA_BLANK;
 output				oVGA_CLOCK;
 //	Control Signal
@@ -79,7 +79,7 @@ wire				mGreen_EN;
 wire				mBlue_EN;
 
 assign	oVGA_BLANK	=	oVGA_H_SYNC & oVGA_V_SYNC;
-assign	oVGA_SYNC	=	1'b0;
+//assign	oVGA_SYNC	=	1'b0;
 assign	oVGA_CLOCK	=	~iCLK_25;
 assign	mCursor_EN	=	iCursor_RGB_EN[3];
 assign	mRed_EN		=	iCursor_RGB_EN[2];
