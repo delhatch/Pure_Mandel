@@ -40,7 +40,7 @@ As more engines are instantiated, the image frame rate increases. Note that the 
 
 8 engines -> 9.37 frames per second
 
-12 engines -> 15.35 frames per second. (Engines running at 84 MHz.)
+12 engines -> 20.5 frames per second. (Engines running at 112 MHz.)
 
 Note: This compares very favorably to a pure NIOS II soft-core processor running at 50 MHz that takes over 12 minutes to calculate a single frame.(!)
 
