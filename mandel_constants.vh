@@ -9,6 +9,6 @@
    // Number of mandelbrot engines to instantiate
    `define NUM_PROC 12
    // Number of bits in engine address bus.
-   `define E_ADDR_WIDTH 4
+   `define E_ADDR_WIDTH $clog2(`NUM_PROC)
    `define MAX_ITERATIONS 255  // Do not exceed 65535. Counting happens in engine.ItrCounter[15:0].
 `endif

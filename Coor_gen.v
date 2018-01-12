@@ -90,8 +90,6 @@ always @ ( cdones ) begin
 end
 */
 
-//assign cpause = big_cengine_addr[C_ADDR_WIDTH]; // high if all reg_cdones are low, ie, all engines are busy.
-//assign clatch_en = ~cpause;
 assign clatch_en = ~none_done;
 
 Mod_counter #( .N(10), .M(640) ) x_cntr (   // 10 bit counter, counts 0 to 639.

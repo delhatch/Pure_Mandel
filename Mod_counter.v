@@ -21,6 +21,6 @@ always @( posedge clk, posedge reset )
 
 assign r_next = ( r_reg == (M-1) ) ? 0 : r_reg + 1;
 assign q = r_reg;
-assign max_tick = ( r_reg == (M-2) ) ? 1'b1 : 1'b0;
+assign max_tick = ( r_reg == (M-1) ) ? 1'b1 : 1'b0;
 
 endmodule
