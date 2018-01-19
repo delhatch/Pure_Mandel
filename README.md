@@ -4,6 +4,12 @@ Author
 
 Del Hatch
 
+![screenshot](https://github.com/delhatch/Pure_Mandel/blob/master/A_screenshot.jpg)
+
+** Project
+
+This project uses pure Verilog RTL (no NIOS processor) to create an array of calculating engines. The engines process Mandelbrot x,y coordinates and write their results in VGA frame memory, corrdinated by the Engine2VGA.v module. All VGA circuitry and the frame buffer memory is created within the Altera EP4CE115 FPGA.
+
 Theory
 
 The famous Mandelbrot set is a set of points in the complex plane. In essence, what we want to find out is if the iterative function C below will converge to some constant or diverge to infinity.
