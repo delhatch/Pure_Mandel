@@ -1,7 +1,0 @@
-force -freeze sim:/Mandel/CLOCK_50 1 0, 0 {10000000 fs} -r {20 ns}
-force -freeze sim:/Mandel/top_reset 1 0
-force -freeze sim:/Mandel/SW 0 0
-force -freeze sim:/Mandel/KEY 0000 0
-run 80 ns
-force -freeze sim:/Mandel/top_reset 0 0
-run 2000 ns
