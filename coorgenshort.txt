@@ -1,9 +1,0 @@
-force -freeze sim:/Coor_gen/cclk 1 0, 0 {10000000 fs} -r {20 ns}
-force -freeze sim:/Coor_gen/creset 1 0
-force -freeze sim:/Coor_gen/cdones 0000 0
-force -freeze sim:/Coor_gen/ckey 0000 0
-run 45 ns
-force -freeze sim:/Coor_gen/creset 0 0
-run 45 ns
-force -freeze sim:/Coor_gen/cdones 0010 0
-run 45 ns
